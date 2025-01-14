@@ -9,6 +9,8 @@ Welcome to Lovelace - University of Plymouth HPC's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+   
+   Login and access the internal site <https://docs.lovelace.plymouth.ac.uk/private/>
 
 
 
