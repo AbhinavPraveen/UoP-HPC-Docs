@@ -16,11 +16,3 @@ Welcome to Lovelace - University of Plymouth HPC's documentation!
    user-guide/transfer
    user-guide/parallel
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
