@@ -32,7 +32,7 @@ To transfer files to Lovelace the command should have the form:
 
 .. code-block:: bash
 
-    rsync [options] source user@lovelace.plymouth.ac.uk:[destination]
+    rsync [options] source_file user@lovelace.plymouth.ac.uk:[destination]
 
 In the above example, the :plaintext:`[destination]` is optional, as when left
 out rsync will simply copy the source into the users home directory.
