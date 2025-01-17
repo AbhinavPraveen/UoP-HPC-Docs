@@ -11,6 +11,7 @@ Welcome to Lovelace - University of Plymouth HPC's documentation!
    :caption: Contents:
    
    Login and access the internal site <https://docs.lovelace.plymouth.ac.uk/private/>
+   user-guide/policy
 
 
 
