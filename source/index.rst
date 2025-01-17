@@ -14,6 +14,7 @@ Welcome to Lovelace - University of Plymouth HPC's documentation!
    user-guide/policy
    user-guide/modules
    user-guide/transfer
+   user-guide/parallel
 
 
 
