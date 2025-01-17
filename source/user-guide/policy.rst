@@ -1,6 +1,4 @@
-.. role:: plaintext(code)
-  :language: text
-  :class: highlight
+.. include:: ../siteinclude.rst
 
 HPC system policy
 ====================
