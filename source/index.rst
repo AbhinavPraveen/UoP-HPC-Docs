@@ -3,8 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Lovelace - University of Plymouth HPC's documentation!
-=================================================================
+Lovelace Cluster Public Documentation
+=====================================
+
+Welcome to the University of Plymouth's Public Documentation on High Performance Compute and the Lovelace cluster. This information on this site is shared with the intention of being useful to all HPC users. See the link below for the Internal Documentation site.
 
 .. toctree::
    :maxdepth: 2
