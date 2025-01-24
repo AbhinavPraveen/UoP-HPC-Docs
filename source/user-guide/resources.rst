@@ -1,6 +1,6 @@
 .. include:: ../siteinclude.rst
 
-Accesing Compute Resources
+Accessing Compute Resources
 ==========================
 
 The Lovelace Cluster uses Slurm to schedule jobs and allocate resources.
