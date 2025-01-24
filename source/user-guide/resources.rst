@@ -156,8 +156,8 @@ If you have special request, contact `hpcsupport@plymouth.ac.uk
 Output from Slurm jobs
 ----------------------
 
-Slurm produces standard output and standard error for each batch job can
-be found in files :plaintext:`<jobname>.o<Job ID>` and :plaintext:`<jobname>.e<Job ID>`
-respectively. These files appear in the job's working directory once
-your job has completed or its maximum allocated time to run (i.e. wall
-time, see later sections) has ran out.
+Slurm produces the output of your job submission in a file with the format :plaintext:`slurm-<Job ID>.out`. This file will be created in the working directory from which you submitted the job with :bash:`sbatch`. You can view the job using the :bash:`less` utility as below:
+
+.. code-block:: bash
+
+   less -r slurm-<Job ID>.out
