@@ -1,7 +1,7 @@
 .. include:: ../siteinclude.rst
 
 Accessing Compute Resources
-==========================
+===========================
 
 The Lovelace Cluster uses Slurm to schedule jobs and allocate resources.
 
@@ -154,7 +154,7 @@ If you have special request, contact `hpcsupport@plymouth.ac.uk
 
 
 Output from Slurm jobs
-------------------------------
+----------------------
 
 Slurm produces standard output and standard error for each batch job can
 be found in files :plaintext:`<jobname>.o<Job ID>` and :plaintext:`<jobname>.e<Job ID>`
