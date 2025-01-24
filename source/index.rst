@@ -14,6 +14,7 @@ Welcome to the University of Plymouth's Public Documentation on High Performance
    
    Login and access the internal site <https://docs.lovelace.plymouth.ac.uk/private/>
    user-guide/policy
+   user-guide/resources
    user-guide/modules
    user-guide/transfer
    user-guide/parallel
