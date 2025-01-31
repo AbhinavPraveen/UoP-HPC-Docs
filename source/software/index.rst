@@ -8,3 +8,4 @@ Examples of notable software found on the HPC cluster is given below.
    :caption: Contents:
 
    cuda
+   matlab
