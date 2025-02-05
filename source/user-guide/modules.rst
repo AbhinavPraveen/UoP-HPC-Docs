@@ -52,12 +52,18 @@ software) are available on the system is performed using the
       cmake/3.24.2       gnu/12.3.0      hwloc/2.7.2  (L)    ohpc             (L)    pmix/4.2.9    singularity/3.7.1 (L)
    ...
 
-This will list all the names and versions of the modules available on
+This will list the names and versions of selected modules available on
 the service. Not all of them may work in your account though due to,
 for example, licencing restrictions. You will notice that for many
 modules we have more than one version, each of which is identified by a
 version number. One of these versions is the default. As the
 service develops the default version will change.
+
+To list the names of all modules available on the system, run the command below. These are normally hidden as these modules are typically not directly used by users. Instead, these modules are usually automatically loaded as dependancies of other modules. Using this command is not recommended for users due to the excessive number of modules.
+
+.. code-block:: bash
+
+   module --show_hidden avail
 
 You can list all the modules of a particular type by providing an
 argument to the :bash:`module avail` command. For example, to list all
