@@ -7,5 +7,6 @@ Examples of notable software found on the HPC cluster is given below.
    :maxdepth: 2
    :caption: Contents:
 
+   python
    cuda
    matlab
