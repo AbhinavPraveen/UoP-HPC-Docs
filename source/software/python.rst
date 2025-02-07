@@ -74,7 +74,7 @@ Note that Python 3.11 and many other modules are implicitly loaded as dependenci
 Using Both Packages Provided in Modules and Those Available Externally with The Recommended Python
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-However, if we want to use Numpy, Scipy and a module not currently provided on Lovelace such as Pygame, load the virtualenv and pip packages and install Pygame within a virtual environment.
+However, if we want to use Numpy, Scipy and a module not currently provided on Lovelace such as Pygame, additionally load the virtualenv and pip and install Pygame within a virtual environment.
 
 .. code-block:: console
 
