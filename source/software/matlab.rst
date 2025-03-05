@@ -8,8 +8,9 @@ MATLAB Individual Edition and MATLAB Parallel Server are available on all nodes 
 Using MATLAB
 --------------
 
-However, it is only possible to use a Graphical User Interface session on the login node. This is not currently supported on compute nodes. You may still use MATLAB to perform computations on the compute nodes using the following methods:
+MATLAB can be used through the following methods:
 
+* Using a Graphical User Interface through X11 forwarding
 * Using a command-line/nodisplay MATLAB session
 * Executing MATLAB scripts as batch jobs
 * Using MATLAB Parallel Server to distribute computations
@@ -17,7 +18,7 @@ However, it is only possible to use a Graphical User Interface session on the lo
 Graphical User Interface Session
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To initiate a Graphical User Interface session, **connect to the login node with X11 Forwarding enabled** (please Login and access the internal site `<https://docs.lovelace.plymouth.ac.uk/private/>`_ for instructions on this). Assuming that you have set up an ssh host named :plaintext:`lovelace` referring to the login node and you are on a supported platform, simply run:
+To initiate a Graphical User Interface session, **connect to the login node or a node which is allocated to you with X11 Forwarding enabled** (please Login and access the internal site `<https://docs.lovelace.plymouth.ac.uk/private/>`_ for instructions on this). Assuming that you have set up an ssh host named :plaintext:`lovelace` referring to the login node and you are on a supported platform, simply run:
 
 .. code-block:: bash
 
