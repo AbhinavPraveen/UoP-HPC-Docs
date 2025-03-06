@@ -12,13 +12,13 @@ Many applications will autodetect CUDA will not require CUDA to be loaded manual
 
 .. code-block:: bash
 
-   module load cuda
+   module load cuda-toolkit
 
 To see the the current CUDA version that is supported on the graphics nodes of the cluster, run the following:
 
 .. code-block:: bash
 
-   module --default avail cuda
+   module --default avail cuda-toolkit
 
 CUDA is subect to version compatibility guarantees. [1]_ However, it is reccomended by the HPC Admin Team that users build their applications against the same version of CUDA, as given above, where possible.
 
