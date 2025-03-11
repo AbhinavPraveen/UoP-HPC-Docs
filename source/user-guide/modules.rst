@@ -224,15 +224,15 @@ Summary
 The name of the  wrapper
 script depends on the compiler suite you are using. In summary:
 
-+----------+----------+--------+
-| Language | Intel    | GCC    |
-+==========+==========+========+
-| Fortran  | mpiifort | mpif90 |
-+----------+----------+--------+
-| C++      | mpiicpc  | mpicxx |
-+----------+----------+--------+
-| C        | mpiicc   | mpicc  |
-+----------+----------+--------+
++----------+----------+---------+
+| Language | Intel    | GCC     |
++==========+==========+=========+
+| Fortran  | mpiifort | mpifort |
++----------+----------+---------+
+| C++      | mpiicpc  | mpicxx  |
++----------+----------+---------+
+| C        | mpiicc   | mpicc   |
++----------+----------+---------+
 
 
 
