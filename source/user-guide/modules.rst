@@ -98,10 +98,10 @@ available versions of the Intel libraries, compilers and tools:
 
 .. code-block:: console
 
-   [user@uop-hpc ~]$ module avail gnu
+   [apraveen@uop-hpc ~]$ module avail intel-oneapi-toolkit-modules
 
-   -------------------------------------------------------------------------------- /opt/ohpc/pub/modulefiles --------------------------------------------------------------------------------
-      gnu/12.3.0    gnu12/12.3.0 (L)
+   -------------------------------------------------------------------------------- /scratch/software/modules --------------------------------------------------------------------------------
+      intel-oneapi-toolkit-modules/2024.2    intel-oneapi-toolkit-modules/2025.0.1 (D)
    ...
 
 If you want more info on any of the modules, you can use the :bash:`module help` command:
