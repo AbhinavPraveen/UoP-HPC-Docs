@@ -108,14 +108,14 @@ If you want more info on any of the modules, you can use the :bash:`module help`
 
 .. code-block:: console
 
-   [user@uop-hpc ~]$ module help openmpi4
+   [apraveen@uop-hpc ~]$ module help python
 
-   ------------------------------------------------------------------------ Module Specific Help for "openmpi4/4.1.6" ------------------------------------------------------------------------
+   -------------------------------------------------------------------- Module Specific Help for "python/3.11.9-spkc57n" ---------------------------------------------------------------------
+   Name   : python
+   Version: 3.11.9
+   Target : zen4
 
-   This module loads the openmpi4 library built with the gnu12 toolchain.
-
-   Version 4.1.6
-
+   The Python programming language.
 
 Loading, unloading and swapping modules
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
