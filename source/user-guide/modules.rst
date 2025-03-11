@@ -191,7 +191,7 @@ The Intel oneAPI compiler suite is available as in the example above. This can b
 
 .. code-block:: bash
 
-    module load tbb compiler-rt compiler
+   module load intel-oneapi-toolkit-modules umf tbb compiler-rt compiler
 
 The compilers are then available as:
 
