@@ -47,15 +47,37 @@ software) are available on the system is performed using the
 
 .. code-block:: console
 
-   [user@uop-hpc ~]$ module avail
+   [apraveen@uop-hpc ~]$ module avail
 
-   ----------------------------------------------------------------------------- /opt/ohpc/pub/moduledeps/gnu12 ------------------------------------------------------------------------------
-      mpich/3.4.3-ucx    mvapich2/2.3.7    openmpi4/4.1.6 (L)
+   ------------------------------------------- /users/cicd/.jenkins/workspace/UoP-Spack/main/57/spack/share/spack/lmod/openmpi/5.0.5-rcpsiyw/Core --------------------------------------------
+      hpl/2.3-cdf3jzd    openfoam/2312-3ez75zr    py-keras/3.6.0-25pmojg    py-netcdf4/1.7.1.post2-ueeh5rw    py-tensorflow/2.17.1-3yn3j3r    py-torch/2.5.1-uezq4xs
 
-   -------------------------------------------------------------------------------- /opt/ohpc/pub/modulefiles --------------------------------------------------------------------------------
-      EasyBuild/4.9.1    conda/24.9.2    gnu12/12.3.0 (L)    libfabric/1.19.0 (L)    os            prun/2.2          (L)    ucx/1.15.0 (L)
-      cmake/3.24.2       gnu/12.3.0      hwloc/2.7.2  (L)    ohpc             (L)    pmix/4.2.9    singularity/3.7.1 (L)
-   ...
+   ------------------------------------------------------ /users/cicd/.jenkins/workspace/UoP-Spack/main/57/spack/share/spack/lmod/Core -------------------------------------------------------
+      gnuplot/6.0.0-axewn2o               py-matplotlib/3.9.2-zsu3nys     py-pip/23.1.2-o3vbbue                   py-virtualenv-py3.13/20.26.5-odglpfj    r/4.4.1-bxhk7cu
+      openmpi/4.1.7-apv3r7k               py-numpy/1.26.4-mv6lajg         py-scipy/1.14.1-f23svxk                 py-virtualenv/20.26.5-ss4meiy           ucx/1.17.0-mzdeqja (L)
+      openmpi/5.0.5-rcpsiyw      (L,D)    py-pandas/2.2.3-gfq43vl         py-sphinx-rtd-theme/1.2.2-bn4hnfg       python-py3.12/3.12.5-yhgncqw
+      py-geopandas/1.0.1-iuzpkxu          py-pip-py3.12/23.1.2-s3hkt4u    py-sphinx/6.2.1-4lot3ku                 python-py3.13/3.13.0-a2js47p
+      py-jupyter/1.1.1-hdsgzlk            py-pip-py3.13/23.1.2-za2klvv    py-virtualenv-py3.12/20.26.5-5d4ku23    python/3.11.9-spkc57n
+
+   -------------------------------------------------------------------------------- /scratch/software/modules --------------------------------------------------------------------------------
+      ansys/2025_R1         aocc/5.0.0          (D)    gcc/13.2.1                 intel-oneapi-toolkit-modules/2024.2          matlab/R2024b
+      aocc/openmpi/4.1.5    cuda-toolkit/12.4.1 (L)    hpcx-modules/2.20          intel-oneapi-toolkit-modules/2025.0.1 (D)    matlab_parallel_server/R2024b
+      aocc/4.2.0            fsl/6.0.7.16               hpcx-modules/2.22.1 (D)    julia/1.11.3                                 ohpc-modules/2
+
+     Where:
+      D:  Default Module
+      L:  Module is loaded
+
+   Module defaults are chosen based on Find First Rules due to Name/Version/Version modules found in the module tree.
+   See https://lmod.readthedocs.io/en/latest/060_locating.html for details.
+
+   If the avail list is too long consider trying:
+
+   "module --default avail" or "ml -d av" to just list the default modules.
+   "module overview" or "ml ov" to display the number of modules for each name.
+
+   Use "module spider" to find all possible modules and extensions.
+   Use "module keyword key1 key2 ..." to search for all possible modules matching any of the "keys".
 
 This will list the names and versions of selected modules available on
 the service. Not all of them may work in your account though due to,
