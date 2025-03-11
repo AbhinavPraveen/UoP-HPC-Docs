@@ -176,7 +176,7 @@ The AOCC compiler suite is also available. This can be loaded with:
 
 .. code-block:: bash
 
-   module load aocc/4.2.0
+   module load aocc
 
 The compilers are then available as:
 
