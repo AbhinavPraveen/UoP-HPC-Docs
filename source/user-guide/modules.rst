@@ -125,20 +125,20 @@ to load the default Intel compilers and their dependencies into the development 
 
 .. code-block:: bash
 
-    module load tbb compiler-rt compiler
+    module load intel-oneapi-toolkit-modules umf tbb compiler-rt compiler
 
 If you need a specific version of each module, you can add more information:
 
 .. code-block:: bash
 
-    module load tbb/2021.13 compiler-rt/2024.2.1 compiler/2024.2.1
+    module load intel-oneapi-toolkit-modules/2025.0.1 umf/0.9.1 tbb/2022.0 compiler-rt/2025.0.4 compiler/2025.0.4
 
 This will load the specified versions of the packages. If you
 want to clean up, :bash:`module remove` will remove a loaded module:
 
 .. code-block:: bash
 
-    module remove tbb/2021.13 compiler-rt/2024.2.1 compiler/2024.2.1
+    module remove intel-oneapi-toolkit-modules/2025.0.1 umf/0.9.1 tbb/2022.0 compiler-rt/2025.0.4 compiler/2025.0.4
 
 (or :bash:`module rm tbb compiler-rt compiler` or
 :bash:`module unload tbb compiler-rt compiler`) will unload what ever version of
