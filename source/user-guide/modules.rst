@@ -23,12 +23,12 @@ The list of the modules loaded  can be obtained by typing:
    [apraveen@uop-hpc ~]$ module list
 
    Currently Loaded Modules:
-     1) glibc/2.28-irs6j3j           7) cuda-toolkit/12.4.1        13) openssl/3.4.0-ayikrvj    19) tar/1.34-sh7q6fd              25) pmix/5.0.3-rpwutdw      31) ucx/1.17.0-mzdeqja
-     2) gcc-runtime/13.2.1-lkklc4c   8) cuda/12.4.1-bcuhqd3        14) libevent/2.1.12-z4htgrn  20) gettext/0.22.5-3tvehct        26) check/0.15.2-ix4rojx    32) ucc/1.3.0-gl5spbf
-     3) libiconv/1.17-bc3us7y        9) libpciaccess/0.17-txxvscv  15) numactl/2.0.18-bzdanek   21) krb5/1.21.3-bsozc3b           27) gdrcopy/2.4.1-mm5coch   33) openmpi/5.0.5-rcpsiyw
-     4) xz/5.4.6-wxtrn6y            10) ncurses/6.5-wiqyrxp        16) bzip2/1.0.8-pyp2qtp      22) libedit/3.1-20240808-cl4k7o7  28) libnl/3.3.0-tmlq6yg
-     5) zlib-ng/2.2.1-2ugru5y       11) hwloc/2.11.1-oomahxc       17) pigz/2.8-trznccw         23) libxcrypt/4.4.35-hydo43o      29) rdma-core/52.0-anqcllq
-     6) libxml2/2.13.4-lbtcocn      12) knem/1.1.4-zepjoi3         18) zstd/1.5.6-jz52fum       24) openssh/9.9p1-g77smjt         30) xpmem/2.6.5-36-37nyl32
+     1) gcc/13.2.1                   7) libxml2/2.13.4-lbtcocn     13) knem/1.1.4-zepjoi3       19) zstd/1.5.6-jz52fum            25) openssh/9.9p1-g77smjt   31) xpmem/2.6.5-36-37nyl32
+     2) glibc/2.28-irs6j3j           8) cuda-toolkit/12.4.1        14) openssl/3.4.0-ayikrvj    20) tar/1.34-sh7q6fd              26) pmix/5.0.3-rpwutdw      32) ucx/1.17.0-mzdeqja
+     3) gcc-runtime/13.2.1-lkklc4c   9) cuda/12.4.1-bcuhqd3        15) libevent/2.1.12-z4htgrn  21) gettext/0.22.5-3tvehct        27) check/0.15.2-ix4rojx    33) ucc/1.3.0-gl5spbf
+     4) libiconv/1.17-bc3us7y       10) libpciaccess/0.17-txxvscv  16) numactl/2.0.18-bzdanek   22) krb5/1.21.3-bsozc3b           28) gdrcopy/2.4.1-mm5coch   34) openmpi/5.0.5-rcpsiyw
+     5) xz/5.4.6-wxtrn6y            11) ncurses/6.5-wiqyrxp        17) bzip2/1.0.8-pyp2qtp      23) libedit/3.1-20240808-cl4k7o7  29) libnl/3.3.0-tmlq6yg
+     6) zlib-ng/2.2.1-2ugru5y       12) hwloc/2.11.1-oomahxc       18) pigz/2.8-trznccw         24) libxcrypt/4.4.35-hydo43o      30) rdma-core/52.0-anqcllq
 
 Basic usage of the :bash:`module` command is covered below. For
 full documentation please see:
