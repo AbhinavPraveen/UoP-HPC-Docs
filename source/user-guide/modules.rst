@@ -207,17 +207,13 @@ Lovelace supports multiple MPI libraries including OpenMPI and Intel MPI. Both a
 Using GCC Compilers and openmpi
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To load :plaintext:`openmpi4`, type:
+OpenMPI 5.0.5 is available by default. This is because the OpenMPI module is loaded by default.
 
-.. code-block:: bash
-
-
-   module load openmpi4
   
 
 The MPI compilers are then available as
 
-* ``mpif90`` - Fortran with MPI
+* ``mpifort`` - Fortran with MPI
 * ``mpicc`` - C with MPI
 * ``mpicxx`` - C++ with MPI
 
