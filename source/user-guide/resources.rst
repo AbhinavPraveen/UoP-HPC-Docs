@@ -64,16 +64,6 @@ You can view just your jobs by using:
 
     squeue -u <username>
 
-
-
-To see more information about a queued job, use:
-
-.. code-block:: bash
-
-    show jobid -dd <jobid>
-
-
-
 The scancel command
 ~~~~~~~~~~~~~~~~~~~~
 
