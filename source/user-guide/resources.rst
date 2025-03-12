@@ -95,7 +95,7 @@ submission script :
 
 .. code-block:: bash
 
-   #SBATCH -p normal
+   #SBATCH -p cpu
 
 :plaintext:`cpu_highmem`
 ~~~~~~~~~~~~~~~~~~~~~~~~
