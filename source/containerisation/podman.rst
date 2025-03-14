@@ -41,7 +41,7 @@ To make a folder on the host available within the container environment, you mus
 The containers will be pulled automatically if they available from `DockerHub <https://hub.docker.com/r>`__ and not available locally.
 
 Building Containers with Podman
-_______________________________
+-------------------------------
 
 With Podman, containers can be built by using a :plaintext:`Dockerfile`. See `Dockerfile reference <https://docs.docker.com/reference/dockerfile/>`__ for the full syntax.
 
