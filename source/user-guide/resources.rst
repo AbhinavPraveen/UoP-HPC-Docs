@@ -103,7 +103,7 @@ submission script :
 To run on the :plaintext:`cpu_highmem` queue add the following to the header of your
 submission script :
 
-.. code-block:: bash
+.. code-block:: sbatch
 
    #SBATCH -p sbatch
 
