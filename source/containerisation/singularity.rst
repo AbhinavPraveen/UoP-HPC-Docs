@@ -15,7 +15,7 @@ To get more information about Singularity, the following manual pages are availa
    man singularity-build
 
 Building and Using Containers with Singularity
-------------------------------------
+----------------------------------------------
 
 With Singularity, containers can be be built either by building using a Singularity Definition File (which defines the steps to build the container) or, by importing from an existing container in an alternative format.
 
