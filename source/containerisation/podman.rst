@@ -1,4 +1,4 @@
-.. include:: ../podman.rst
+.. include:: ../siteinclude.rst
 
 Singularity
 ===========
