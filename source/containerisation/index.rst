@@ -12,3 +12,4 @@ The mechanisms that are provided on the cluster are included below alongside som
    :caption: Contents:
 
    singularity
+   podman
