@@ -125,7 +125,7 @@ To build a container from Rocky Linux 9 (functionally equivalent to Red Hat Ente
         python3 -m pip install -r /requirements.txt
 
 To import the :plaintext:`texlive/texlive` image from `DockerHub <https://hub.docker.com/r/texlive/texlive>`__:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
