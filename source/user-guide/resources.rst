@@ -142,6 +142,14 @@ Sometimes some nodes are "down" and less nodes are available.
 If you have special request, contact `hpcsupport@plymouth.ac.uk
 <mailto:hpcsupport@plymouth.ac.uk>`_.
 
+Accounts
+--------
+
+Users are allocated to Slurm Accounts based on the projects they are part of. Users that are only part of a single project (and thus a single Slurm Account) will have jobs automatically allocated against this project for accounting purposes. Users that are part of multiple projects should include a line in their submission scripts that sets the account for the job as follows.
+
+.. code-block:: sbatch
+
+   #SBATCH --account=<account name>
 
 Output from Slurm jobs
 ----------------------
