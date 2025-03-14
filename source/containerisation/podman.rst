@@ -56,8 +56,8 @@ ________
 
 Some examples of building and using containers are given below:
 
-Build and Use a Container with Tensorflow and Various Python Packages
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Build and Use a Container with Tensorflow and Various Python Packages (Podman)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To extend the `tensorflow/tensorflow image on DockerHub <https://hub.docker.com/r/tensorflow/tensorflow>`__) by installing various Python packages inside it, you could use the dockerfile below:
 
@@ -92,8 +92,8 @@ To run the same python script on a GPU node with a GPU available, you could use 
 
 **TODO**
 
-Build a Container from Rocky Linux 9 with Python and :plaintext:`requirements.txt`
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Build a Container from Rocky Linux 9 with Python and :plaintext:`requirements.txt` (Podman)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To build a container from Rocky Linux 9 (functionally equivalent to Red Hat Enterprise Linux 9) and, install Python and arbitrary Python packages according to a :plaintext:`requirements.txt` file (in the same folder as the :plaintext:`Dockerfile` below), you could use the :plaintext:`Dockerfile` below:
 
