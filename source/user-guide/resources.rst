@@ -160,8 +160,8 @@ Slurm produces the output of your job submission in a file with the format :plai
 
    less -r slurm-<Job ID>.out
 
-Examples
---------
+Examples of Job Submission Scripts
+----------------------------------
 
 Some examples are given below:
 
