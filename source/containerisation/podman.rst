@@ -1,7 +1,7 @@
 .. include:: ../siteinclude.rst
 
-Singularity
-===========
+Podman
+======
 
 Podman is a container platform focused on security. It is very robust and is supported by `Red Hat <https://www.redhat.com/en/topics/containers/what-is-podman>`__. Podman supports images in the Open Container Initiative (OCI) format -- these are also supported by Docker, Kubernetes and Singularity among others.
 
