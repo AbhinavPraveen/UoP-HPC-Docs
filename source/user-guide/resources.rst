@@ -93,7 +93,7 @@ You may only schedule task on the billed queues if there is funding assosciated 
 To run on the :plaintext:`cpu` queue, add the following to the header of your
 submission script :
 
-.. code-block:: bash
+.. code-block:: sbatch
 
    #SBATCH -p cpu
 
@@ -105,7 +105,7 @@ submission script :
 
 .. code-block:: bash
 
-   #SBATCH -p cpu_highmem
+   #SBATCH -p sbatch
 
 .. _gpu_h100_job:
 
@@ -115,7 +115,7 @@ submission script :
 To run on the :plaintext:`gpu_h100` queue add the following to the header of your
 submission script :
 
-.. code-block:: bash
+.. code-block:: sbatch
 
    #SBATCH -p gpu_h100
    #SBATCH --gpus 1
@@ -130,7 +130,7 @@ Each job must request exactly one GPU if running on this partition.
 To run on the :plaintext:`gpu_l40s` queue add the following to the header of your
 submission script :
 
-.. code-block:: bash
+.. code-block:: sbatch
 
    #SBATCH -p gpu_l40s
    #SBATCH --gpus 1
