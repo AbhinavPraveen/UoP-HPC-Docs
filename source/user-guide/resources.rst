@@ -159,3 +159,42 @@ Slurm produces the output of your job submission in a file with the format :plai
 .. code-block:: bash
 
    less -r slurm-<Job ID>.out
+
+Examples
+--------
+
+Some examples are given below:
+
+Run a Python Script using Numpy on a CPU Node
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The job submission below assumes that the script is called :plaintext:`myscript.py` and stored in your home folder.
+
+.. code-block:: sbatch
+
+   #!/bin/bash
+   #SBATCH -p cpu
+
+   cd
+   module load py-numpy
+   python3 myscript.py
+
+If the submission script is called :plaintext:`py-numpy.sbatch`, you can submit it by running:
+
+.. code-block:: bash
+
+   sbatch py-numpy.sbatch
+
+Run a GPU Application on a GPU Node
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This job runs the :plaintext:`nvidia-smi` utility on a GPU node with a GPU, returning details about the allocated GPU
+
+.. code-block:: sbatch
+
+   #!/bin/bash
+   #SBATCH -p gpu_l40s
+   #SBATCH --gpus 1
+
+   nvidia-smi
+
