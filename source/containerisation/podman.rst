@@ -51,8 +51,8 @@ To build a container, create a folder for the :plaintext:`Dockerfile`, say :plai
 
    podman build -t CONTAINER_NAME CONTAINER_FOLDER
 
-Examples
-________
+Examples of Building and Using Podman Containers
+------------------------------------------------
 
 Some examples of building and using containers are given below:
 
