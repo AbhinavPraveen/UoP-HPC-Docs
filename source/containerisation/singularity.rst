@@ -86,6 +86,7 @@ The container can then be executed with:
 If you have a python script in your home folder called :plaintext:`myscript.py`, you could create (and submit -- see :doc:`/user-guide/resources`) a job file such as the following to run the python script in the container on a CPU node. The following example assumes that both the SIF image and script are saved in your home folder.
 
 .. code-block:: sbatch
+
    #!/bin/bash
    #SBATCH -p cpu
 
@@ -95,6 +96,7 @@ If you have a python script in your home folder called :plaintext:`myscript.py`,
 To run the same python script on a GPU node with a GPU available, you could use the following
 
 .. code-block:: sbatch
+
    #!/bin/bash
    #SBATCH -p gpu_l40s
    #SBATCH --gpus 1
