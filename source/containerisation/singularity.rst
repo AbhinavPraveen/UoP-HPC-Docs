@@ -25,7 +25,7 @@ The general format to building a container from a definiton file with Singularit
 
    singularity build --fakeroot SIF_FILE_NAME DEFINTION_FILE_NAME
 
-The general format to converting an image from a container registry (such as `DockerHub <https://hub.docker.com/r>`_) is:
+The general format to converting an image from a container registry (such as `DockerHub <https://hub.docker.com/r>`__) is:
 
 .. code-block:: bash
 
@@ -61,7 +61,7 @@ These commands can be included on job submission scripts. Some specific examples
 Build and Use a Container with Tensorflow and Various Python Packages
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This examples extends the SIF image provided by the HPC Admin Team (itself based on the `tensorflow/tensorflow image on DockerHub <https://hub.docker.com/r/tensorflow/tensorflow>`_) by installing various Python packages inside it.
+This examples extends the SIF image provided by the HPC Admin Team (itself based on the `tensorflow/tensorflow image on DockerHub <https://hub.docker.com/r/tensorflow/tensorflow>`__) by installing various Python packages inside it.
 
 .. code-block:: singularity
 
@@ -124,7 +124,7 @@ To build a container from Rocky Linux 9 (functionally equivalent to Red Hat Ente
         dnf install -y python3 python3-pip
         python3 -m pip install -r /requirements.txt
 
-To import the :plaintext:`texlive/texlive` image from `DockerHub <https://hub.docker.com/r/texlive/texlive>`_:
+To import the :plaintext:`texlive/texlive` image from `DockerHub <https://hub.docker.com/r/texlive/texlive>`__:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
