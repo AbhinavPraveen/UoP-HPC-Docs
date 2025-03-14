@@ -132,7 +132,7 @@ submission script :
 
 .. code-block:: bash
 
-   #SBATCH -p l40s
+   #SBATCH -p gpu_l40s
    #SBATCH --gpus 1
 
 Each job must request exactly one GPU if running on this partition.
