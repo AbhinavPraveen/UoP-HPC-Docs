@@ -161,7 +161,7 @@ Available Compiler Suites
 GCC Compiler Suite
 ~~~~~~~~~~~~~~~~~~
 
-The GCC 13.2.1 compiler suite is available by default. This is because the :plaintext:`gcc/13.2.1` module is loaded by default.
+The GCC 13.3.1 compiler suite is available by default. This is because the :plaintext:`gcc/13.3.1` module is loaded by default.
 
 The compilers are available as:
 
