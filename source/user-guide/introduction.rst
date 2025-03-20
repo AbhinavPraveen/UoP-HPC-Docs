@@ -31,7 +31,7 @@ If you need any assistance in using foseres, please send a support requests to H
 Training
 -------------
 
-Some ressources are available here: 
+Some resources are available here: 
 
 https://www.archer2.ac.uk/training/#upcoming-training
 
