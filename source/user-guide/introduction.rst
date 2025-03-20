@@ -86,7 +86,7 @@ File systems and Data Infrastructure
 Lovelace uses GPFS for its filesystem. It is a parallel file system desgined to give high
 read/write bandwidth for parallel I/O operations.
 
-The Lustre file system has a total of 2 PB available. These is accesible through on the login node.
+The GPFS file system has a total of 2 PB available. This is accesible on all nodes.
 
 .. note::
 
