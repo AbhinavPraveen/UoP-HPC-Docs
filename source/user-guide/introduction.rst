@@ -27,6 +27,8 @@ Getting help
 
 If you need any assistance in using foseres, please send a support requests to HPC Support at `hpcsupport@plymouth.ac.uk <mailto:hpcsupport@plymouth.ac.uk>`_, and our team will try to help you as soon as possible. In your Email, please share as much detail as possible about your query.
 
+.. note::
+   Drop-in HPC Support sessions are periodically held. See :doc:`/user-guide/dropin` for details.
 
 Training
 -------------
