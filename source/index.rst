@@ -19,6 +19,7 @@ Welcome to the University of Plymouth's Public Documentation on High Performance
    user-guide/introduction
    user-guide/policy
    user-guide/dropin
+   Using LiCO on the Lovelace Cluster (Login Required) <https://docs.lovelace.plymouth.ac.uk/private/lico/>
    user-guide/resources
    user-guide/modules
    user-guide/transfer
