@@ -13,8 +13,8 @@ It has been been adapted from the documentation of the tesseract service:
 https://tesseract-dirac.readthedocs.io/en/latest/user-guide/introduction.html
 
 
-Acknowledging foseres
------------------------
+Acknowledging the Lovelace Cluster
+----------------------------------
 
 You should use the following phrase to acknowledge Lovelace in all
 research outputs that have used the facility:
@@ -25,7 +25,7 @@ research outputs that have used the facility:
 Getting help
 ---------------
 
-If you need any assistance in using foseres, please send a support requests to HPC Support at `hpcsupport@plymouth.ac.uk <mailto:hpcsupport@plymouth.ac.uk>`_, and our team will try to help you as soon as possible. In your Email, please share as much detail as possible about your query.
+If you need any assistance in using the Lovelace cluster, please send a support requests to HPC Support at `hpcsupport@plymouth.ac.uk <mailto:hpcsupport@plymouth.ac.uk>`_, and our team will try to help you as soon as possible. In your Email, please share as much detail as possible about your query.
 
 .. note::
    Drop-in HPC Support sessions are periodically held. See :doc:`/user-guide/dropin` for details.

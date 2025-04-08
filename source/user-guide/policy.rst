@@ -44,5 +44,5 @@ Allocation policy
 Currently two sets of queues are available to users. These are the standard queues (:plaintext:`cpu`, :plaintext:`cpu_highmem`, :plaintext:`gpu_h100`, :plaintext:`gpu_l40s`) and the billed queues (:plaintext:`cpu-billed`, :plaintext:`cpu_highmem-billed`, :plaintext:`gpu_h100-billed`, :plaintext:`gpu_l40s-billed`).
 
 
-If you have any questions on how to run jobs on foseres do not hesitate
+If you have any questions on how to run jobs on the Lovelace cluster, do not hesitate
 to contact the HPC Support at `hpcsupport@plymouth.ac.uk <mailto:hpcsupport@plymouth.ac.uk>`_.
