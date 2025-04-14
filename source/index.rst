@@ -8,9 +8,6 @@ Lovelace Cluster Public Documentation
 
 Welcome to the University of Plymouth's Public Documentation on High Performance Compute and the Lovelace cluster. This information on this site is shared with the intention of being useful to all HPC users. See the link below for the Internal Documentation site.
 
-.. note::
-   Users may be interested in the Cancer research placement at: https://dirac.ac.uk/innovation-placements/
-
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
