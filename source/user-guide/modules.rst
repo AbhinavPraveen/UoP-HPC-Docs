@@ -49,20 +49,24 @@ software) are available on the system is performed using the
 
    [apraveen@uop-hpc ~]$ module avail
 
-   ------------------------------------------- /users/cicd/.jenkins/workspace/UoP-Spack/main/57/spack/share/spack/lmod/openmpi/5.0.5-rcpsiyw/Core --------------------------------------------
-      hpl/2.3-cdf3jzd    openfoam/2312-3ez75zr    py-keras/3.6.0-25pmojg    py-netcdf4/1.7.1.post2-ueeh5rw    py-tensorflow/2.17.1-3yn3j3r    py-torch/2.5.1-uezq4xs
+   ------------------------------------------- /users/cicd/.jenkins/workspace/UoP-Spack/main/113/spack/share/spack/lmod/openmpi/5.0.5-fp6i5jk/Core -------------------------------------------
+      abyss/2.3.10-65lydhd         hpl/2.3-f7adg7v            py-keras/3.6.0-qm535qo            py-torch/2.5.1-h3qeknb    xbeach/6118-rfmbfsw
+      adcirc/56.0.3-4oztlos        openfoam/2312-fyzw4ln      py-netcdf4/1.7.1.post2-lrnbi6s    swan/4145-filbquq
+      bigdft-core/1.9.5-43un7wm    py-bigdft/1.9.5-4xrtwr7    py-tensorflow/2.17.1-mlz3f6e      swash/main-5s3s4uc
 
-   ------------------------------------------------------ /users/cicd/.jenkins/workspace/UoP-Spack/main/57/spack/share/spack/lmod/Core -------------------------------------------------------
-      gnuplot/6.0.0-axewn2o               py-matplotlib/3.9.2-zsu3nys     py-pip/23.1.2-o3vbbue                   py-virtualenv-py3.13/20.26.5-odglpfj    r/4.4.1-bxhk7cu
-      openmpi/4.1.7-apv3r7k               py-numpy/1.26.4-mv6lajg         py-scipy/1.14.1-f23svxk                 py-virtualenv/20.26.5-ss4meiy           ucx/1.17.0-mzdeqja (L)
-      openmpi/5.0.5-rcpsiyw      (L,D)    py-pandas/2.2.3-gfq43vl         py-sphinx-rtd-theme/1.2.2-bn4hnfg       python-py3.12/3.12.5-yhgncqw
-      py-geopandas/1.0.1-iuzpkxu          py-pip-py3.12/23.1.2-s3hkt4u    py-sphinx/6.2.1-4lot3ku                 python-py3.13/3.13.0-a2js47p
-      py-jupyter/1.1.1-hdsgzlk            py-pip-py3.13/23.1.2-za2klvv    py-virtualenv-py3.12/20.26.5-5d4ku23    python/3.11.9-spkc57n
+   ------------------------------------------------------ /users/cicd/.jenkins/workspace/UoP-Spack/main/113/spack/share/spack/lmod/Core ------------------------------------------------------
+      bwa/0.7.17-v72ok5n             py-geopandas/1.0.1-vultwue      py-pip-py3.13/23.1.2-dauydjf            py-virtualenv-py3.13/20.26.5-sqb2hgl    trinity/2.15.1.FULL-myzlz5u
+      gatk/4.5.0.0-yvwst4o           py-jupyter/1.1.1-32xgg6m        py-pip/23.1.2-qwz5sj5                   py-virtualenv/20.26.5-fmvfrje           ucx/1.17.0-mzix24r          (L)
+      gnuplot/6.0.0-r5k27jt          py-matplotlib/3.9.2-hsad7f7     py-scipy/1.14.1-tisu5tg                 python-py3.12/3.12.5-uni66am
+      openmpi/4.1.7-q3idazf          py-numpy/1.26.4-mde553l         py-sphinx-rtd-theme/1.2.2-45lz6nd       python-py3.13/3.13.0-irwel6m
+      openmpi/5.0.5-fp6i5jk (L,D)    py-pandas/2.2.3-sgvtc6s         py-sphinx/6.2.1-fry74n4                 python/3.11.9-bgjodjg
+      paml/4.10.7-pkdiklo            py-pip-py3.12/23.1.2-dor7udl    py-virtualenv-py3.12/20.26.5-qp5jrs3    r/4.4.1-flsgxmv
 
    -------------------------------------------------------------------------------- /scratch/software/modules --------------------------------------------------------------------------------
-      ansys/2025_R1         aocc/5.0.0          (D)    gcc/13.2.1                 intel-oneapi-toolkit-modules/2024.2          matlab/R2024b
-      aocc/openmpi/4.1.5    cuda-toolkit/12.4.1 (L)    hpcx-modules/2.20          intel-oneapi-toolkit-modules/2025.0.1 (D)    matlab_parallel_server/R2024b
-      aocc/4.2.0            fsl/6.0.7.16               hpcx-modules/2.22.1 (D)    julia/1.11.3                                 ohpc-modules/2
+      ansys/2025_R1             conda/24.9.2               delft3d-fm/1          hpcx-modules/2.20                            julia/1.11.3                     spack-modules/113 (L)
+      aocc/openmpi/4.1.5        cuda-toolkit/12.4.1 (L)    fsl/6.0.7.16          hpcx-modules/2.22.1                   (D)    matlab/R2024b
+      aocc/4.2.0                delft3d-delft3d4/1         gcc/13.3.1   (L,D)    intel-oneapi-toolkit-modules/2024.2          matlab_parallel_server/R2024b
+      aocc/5.0.0         (D)    delft3d-flow2d3d/1         gcc/14.2.1            intel-oneapi-toolkit-modules/2025.0.1 (D)    ohpc-modules/2
 
      Where:
       D:  Default Module
