@@ -23,15 +23,15 @@ The list of the modules loaded  can be obtained by typing:
    [apraveen@uop-hpc ~]$ module list
 
    Currently Loaded Modules:
-     1) gcc/13.2.1                   7) libxml2/2.13.4-lbtcocn     13) knem/1.1.4-zepjoi3       19) zstd/1.5.6-jz52fum            25) openssh/9.9p1-g77smjt   31) xpmem/2.6.5-36-37nyl32
-     2) glibc/2.28-irs6j3j           8) cuda-toolkit/12.4.1        14) openssl/3.4.0-ayikrvj    20) tar/1.34-sh7q6fd              26) pmix/5.0.3-rpwutdw      32) ucx/1.17.0-mzdeqja
-     3) gcc-runtime/13.2.1-lkklc4c   9) cuda/12.4.1-bcuhqd3        15) libevent/2.1.12-z4htgrn  21) gettext/0.22.5-3tvehct        27) check/0.15.2-ix4rojx    33) ucc/1.3.0-gl5spbf
-     4) libiconv/1.17-bc3us7y       10) libpciaccess/0.17-txxvscv  16) numactl/2.0.18-bzdanek   22) krb5/1.21.3-bsozc3b           28) gdrcopy/2.4.1-mm5coch   34) openmpi/5.0.5-rcpsiyw
-     5) xz/5.4.6-wxtrn6y            11) ncurses/6.5-wiqyrxp        17) bzip2/1.0.8-pyp2qtp      23) libedit/3.1-20240808-cl4k7o7  29) libnl/3.3.0-tmlq6yg
-     6) zlib-ng/2.2.1-2ugru5y       12) hwloc/2.11.1-oomahxc       18) pigz/2.8-trznccw         24) libxcrypt/4.4.35-hydo43o      30) rdma-core/52.0-anqcllq
+     1) gcc/13.3.1                   7) zlib/1.3.1-zkl5wjj         13) hwloc/2.11.1-mqg2qec     19) pigz/2.8-pipe537              25) libxcrypt/4.4.35-2leymva  31) rdma-core/52.0-vibka2e
+     2) spack-modules/113            8) libxml2/2.13.4-vqoagpe     14) knem/1.1.4-prvvzic       20) zstd/1.5.6-pdk6d4j            26) openssh/9.9p1-agycqww     32) xpmem/2.6.5-36-rxnv6w6
+     3) glibc/2.28-lmcpkml           9) cuda-toolkit/12.4.1        15) openssl/3.4.0-7ckv34u    21) tar/1.34-dzeehng              27) pmix/5.0.3-2gkjs47        33) ucx/1.17.0-mzix24r
+     4) gcc-runtime/13.3.1-2kda5rk  10) cuda/12.4.1-b35sufh        16) libevent/2.1.12-tgsoax3  22) gettext/0.22.5-zjglimm        28) check/0.15.2-aflo7jk      34) ucc/1.3.0-h2s7mm6
+     5) libiconv/1.17-6nlfqwe       11) libpciaccess/0.17-d5wcj52  17) numactl/2.0.18-xy2slzw   23) krb5/1.21.3-i3rz3pq           29) gdrcopy/2.4.1-xyc5lwi     35) openmpi/5.0.5-fp6i5jk
+     6) xz/5.4.6-rb3mavc            12) ncurses/6.5-pnmzftp        18) bzip2/1.0.8-hwh4cnv      24) libedit/3.1-20240808-fxke3py  30) libnl/3.3.0-haaq6e3
 
-Basic usage of the :bash:`module` command is covered below. For
-full documentation please see:
+   Basic usage of the :bash:`module` command is covered below. For
+   full documentation please see:
 
 -  `User Guide for Lmod <https://lmod.readthedocs.io/en/latest/010_user.html>`_
 
