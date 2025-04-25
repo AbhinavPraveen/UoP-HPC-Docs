@@ -7,10 +7,10 @@ The HPC Admin team hosts periodic drop in sessions for general support on using 
 
 Upcoming sessions are on:
 
-* Monday 7th April - 11:00 to 12:00 - PSQ B003
-* Thursday 24th April - 11:00 to 12:00 - BGB 412
 * Friday 2nd May - 11:00 to 12:00 - BGB 412
 
 Past sessions were on:
 
+* Thursday 24th April - 11:00 to 12:00 - BGB 412
+* Monday 7th April - 11:00 to 12:00 - PSQ B003
 * Tuesday 1st April - 11:00 to 12:00 - ROLLE 601
