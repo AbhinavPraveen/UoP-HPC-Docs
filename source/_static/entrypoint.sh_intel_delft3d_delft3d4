@@ -1,0 +1,5 @@
+#!/bin/bash
+. /etc/profile
+. /opt/intel/oneapi/setvars.sh 1>/dev/null 2>&1
+export PATH="$PATH:/delft3d/build_delft3d4/install/bin"
+exec "$@"

@@ -140,17 +140,32 @@ Delft3D FM
 .. literalinclude:: /_static/Dockerfile_intel_delft3d_fm
    :language: dockerfile
 
+The file below is :plaintext:`entrypoint.sh` in this case:
+
+.. literalinclude:: /_static/entrypoint.sh_intel_delft3d_fm
+   :language: bash
+
 Delft3D Flow2D3D
 ~~~~~~~~~~~~~~~~
 
 .. literalinclude:: /_static/Dockerfile_intel_delft3d_flow2d3d
    :language: dockerfile
 
+The file below is :plaintext:`entrypoint.sh` in this case:
+
+.. literalinclude:: /_static/entrypoint.sh_intel_delft3d_flow2d3d
+   :language: bash
+
 Delft3D Delft3D4
 ~~~~~~~~~~~~~~~~
 
 .. literalinclude:: /_static/Dockerfile_intel_delft3d_delft3d4
    :language: dockerfile
+
+The file below is :plaintext:`entrypoint.sh` in this case:
+
+.. literalinclude:: /_static/entrypoint.sh_intel_delft3d_delft3d4
+   :language: bash
 
 Execution
 ~~~~~~~~~
