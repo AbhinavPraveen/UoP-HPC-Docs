@@ -1,0 +1,7 @@
+FROM registry.access.redhat.com/ubi9
+#FROM rockylinux:9
+
+COPY oneAPI.repo /etc/yum.repos.d/oneAPI.repo
+
+RUN yum update -y && yum groupinstall -y 'Development Tools'
+RUN yum install -y intel-basekit-2023.2.0 intel-hpckit-2023.2.0  intel-basekit-32bit-2023.2.0 intel-hpckit-32bit-2023.2.0 procps-ng

@@ -103,3 +103,56 @@ To build a container from Rocky Linux 9 (functionally equivalent to Red Hat Ente
    COPY requirements.txt /requirements.txt
    RUN dnf install -y python3 python3-pip
    RUN python3 -m pip install -r /requirements.txt
+
+Delft3D
+-------
+
+Note that the following example is advanced. It is shared for the reader's interest or in case there are any readers with the same issue.
+
+The following set of :plaintext:`Dockerfile`'s are used to build a container providing the `Delft3D FM Suite <https://www.deltares.nl/en/software-and-data/products/delft3d-flexible-mesh-suite>`_. This can be be used by anyone with software including Podman, Docker, Buildx and more. Note that this example builds from a `Red Hat Universal Base Image (UBI) <https://www.redhat.com/en/blog/introducing-red-hat-universal-base-image>`_. This can be switched to e.g. RockyLinux if the reader prefers.
+
+Intel
+~~~~~
+
+First a container with Intel's utilities is built:
+
+.. literalinclude:: /static/Dockerfile_intel
+   :language: dockerfile
+
+Intel Delft3D Base
+~~~~~~~~~~~~~~~~~~
+
+The above container is then extended with the dependencies of Delft3D:
+
+.. literainclude:: /static/Dockerfile_intel_delft3d_base
+   :language: dockerfile
+
+This copies the Delft3D source code and the :plaintext:`config-intel.sh` script below from the same directory as the :plaintext:`Dockerfile`:
+
+.. literinclude:: /static/config-intel.sh
+   :language: bash
+
+From this image, various images are built providing various Delft3D oferings.
+
+Delft3D FM
+~~~~~~~~~~
+
+.. literainclude:: /static/Dockerfile_intel_delft3d_fm
+   :language: dockerfile
+
+Delft3D Flow2D3D
+~~~~~~~~~~~~~~~~
+
+.. literainclude:: /static/Dockerfile_intel_delft3d_flow2d3d
+   :language: dockerfile
+
+Delft3D Delft3D4
+~~~~~~~~~~~~~~~~
+
+.. literainclude:: /static/Dockerfile_intel_delft3d_delft3d4
+   :language: dockerfile
+
+Execution
+~~~~~~~~~
+
+We then expose this images by converting them to Singularity images using the methods in :doc:`/containerisation/singularity` and use wrapper scripts for ease of use.

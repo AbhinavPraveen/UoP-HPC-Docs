@@ -1,0 +1,23 @@
+FROM localhost/intel
+RUN dnf install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm && crb enable && dnf config-manager --set-enabled codeready-builder-for-rhel-9-x86_64-rpms
+RUN yum install -y cmake ninja-build hdf5 hdf5-devel netcdf netcdf-devel metis metis-devel gdal gdal-devel util-linux sqlite sqlite-devel libtiff libtiff-devel unzip git proj proj-devel procps-ng patchelf subversion uuid uuid-devel libuuid libuuid-devel
+
+RUN mkdir /delft3d /netcdf /cmake /petsc
+
+RUN curl -L 'https://github.com/Unidata/netcdf-fortran/archive/refs/tags/v4.6.1.tar.gz' | tar --strip-components=1 -xzvC /netcdf
+COPY config-intel.sh /netcdf
+
+COPY delft3d-all-release-2025.01.zip /delft3d.zip
+RUN cd /delft3d && unzip /delft3d.zip
+
+RUN . /opt/intel/oneapi/setvars.sh && cd /netcdf && ./config-intel.sh && make -j && make check -j && make install -j
+ENV PKG_CONFIG_PATH=/usr/local/netcdf-ifort/4.6.1/lib/pkgconfig
+
+RUN curl -L 'https://github.com/Kitware/CMake/releases/download/v3.31.6/cmake-3.31.6-linux-x86_64.tar.gz' | tar --strip-components=1 -xzvC /cmake 
+
+RUN yum install -y hostname
+RUN curl -L 'https://web.cels.anl.gov/projects/petsc/download/release-snapshots/petsc-3.19.6.tar.gz' | tar --strip-components=1 -xzvC /petsc
+
+RUN . /opt/intel/oneapi/setvars.sh && export I_MPI_CC=icx && export I_MPI_CXX=icpx && export I_MPI_F90=ifort && export PETSC_USE_FORTRAN_BINDINGS=1 && cd /petsc && ./configure --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpif90 --prefix=/usr --with-fortran=1 --with-debugging=0 COPTFLAGS='-O3 -march=native' CXXOPTFLAGS='-O3 -march=native' FOPTFLAGS='-O3 -march=native' && make all DESTDIR=/tmp/petsc-pkg -j && make install DESTDIR=/tmp/petsc-pkg -j
+RUN cp -r /tmp/petsc-pkg/usr /
+ENV PKG_CONFIG_PATH=/usr/local/netcdf-ifort/4.6.1/lib/pkgconfig:/usr/lib/pkgconfig

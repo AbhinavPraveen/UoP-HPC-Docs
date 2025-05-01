@@ -1,0 +1,4 @@
+FROM localhost/intel-delft3d-base
+RUN export PATH="/cmake/bin:$PATH" FC=mpiifort CXX=mpiicpx CC=mpiicx && . /opt/intel/oneapi/setvars.sh && cd /delft3d && bash ./build.sh delft3d4
+COPY entrypoint.sh /
+ENTRYPOINT ["/entrypoint.sh"]
