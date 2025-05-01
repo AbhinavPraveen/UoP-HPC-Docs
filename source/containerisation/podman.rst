@@ -116,7 +116,7 @@ Intel
 
 First a container with Intel's utilities is built:
 
-.. literalinclude:: /static/Dockerfile_intel
+.. literalinclude:: /_static/Dockerfile_intel
    :language: dockerfile
 
 Intel Delft3D Base
@@ -124,12 +124,12 @@ Intel Delft3D Base
 
 The above container is then extended with the dependencies of Delft3D:
 
-.. literalinclude:: /static/Dockerfile_intel_delft3d_base
+.. literalinclude:: /_static/Dockerfile_intel_delft3d_base
    :language: dockerfile
 
 This copies the Delft3D source code and the :plaintext:`config-intel.sh` script below from the same directory as the :plaintext:`Dockerfile`:
 
-.. literalinclude:: /static/config-intel.sh
+.. literalinclude:: /_static/config-intel.sh
    :language: bash
 
 From this image, various images are built providing various Delft3D oferings.
@@ -137,19 +137,19 @@ From this image, various images are built providing various Delft3D oferings.
 Delft3D FM
 ~~~~~~~~~~
 
-.. literalinclude:: /static/Dockerfile_intel_delft3d_fm
+.. literalinclude:: /_static/Dockerfile_intel_delft3d_fm
    :language: dockerfile
 
 Delft3D Flow2D3D
 ~~~~~~~~~~~~~~~~
 
-.. literalinclude:: /static/Dockerfile_intel_delft3d_flow2d3d
+.. literalinclude:: /_static/Dockerfile_intel_delft3d_flow2d3d
    :language: dockerfile
 
 Delft3D Delft3D4
 ~~~~~~~~~~~~~~~~
 
-.. literalinclude:: /static/Dockerfile_intel_delft3d_delft3d4
+.. literalinclude:: /_static/Dockerfile_intel_delft3d_delft3d4
    :language: dockerfile
 
 Execution
