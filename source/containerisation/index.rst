@@ -13,3 +13,4 @@ The mechanisms that are provided on the cluster are included below alongside som
 
    singularity
    podman
+   mpi
