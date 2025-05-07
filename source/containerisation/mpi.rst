@@ -13,7 +13,7 @@ Building the OpenMPI Container
 We follow the process given in :doc:`/containerisation/podman`. We start by creating a folder called :plaintext:`openmpi` with a file called :plaintext:`Dockerfile` with the contents below:
 
 .. literalinclude:: /_static/Dockerfile_openmpi5_manual
-   :language: bash
+   :language: dockerfile
 
 Note that the container above is built against a Red Hat Universal Base Image. Users may choose to use rockylinux instead. We also expect installation files for `Nvidia OFED <https://network.nvidia.com/products/infiniband-drivers/linux/mlnx_ofed/>`_, `PMIx Reference Library (OpenPMIX) <https://github.com/openpmix/openpmix/releases>`_, `PMIx Reference RunTime Environment (PRRTE) <https://github.com/openpmix/prrte/releases>`_, and `OpenMPI <https://www.open-mpi.org/software/ompi/v5.0/>`_ to be in the :plaintext:`openmpi` folder. Each file can be download from the linked sources.
 
@@ -36,7 +36,7 @@ Extending the OpenMPI Container with the HiRep Application
 We then extend the container using the Dockerfile below. We create a folder called :plaintext:`hirep` with a file called :plaintext:`Dockerfile` with the contents below:
 
 .. literalinclude:: /_static/Dockerfile_hirep
-   :language: bash
+   :language: dockerfile
 
 We also expect the source files for HiRep at a specific commit to be in the :plaintext:`hirep` folder. This can be downloaded from `<https://github.com/claudiopica/HiRep/archive/57bac424dec078bbccb0d3eeb7e32a027d023685.zip>`_.
 
