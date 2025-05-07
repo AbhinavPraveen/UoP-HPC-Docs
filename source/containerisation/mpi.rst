@@ -69,6 +69,7 @@ Finally, we will create a job submission file for the DiracOperator component of
 We can the submit the job using the following Job Submission script:
 
 .. literalinclude:: /_static/container_hirep.slurm
+   :language: slurm
 
 Note that we expect :plaintext:`hirep_input_file`, :plaintext:`hirep.sif` and the Job Submission script to be in the current working directory. Note that this example uses PMIx with OpenMPI but other MPI Implementations (such as Intel MPI) may work better with :plaintext:`--mpi=pmi2`.
 
