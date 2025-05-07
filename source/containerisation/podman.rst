@@ -109,7 +109,7 @@ Delft3D
 
 Note that the following example is advanced. It is shared for the reader's interest or in case there are any readers with the same issue.
 
-The following set of :plaintext:`Dockerfile`'s are used to build a container providing the `Delft3D FM Suite <https://www.deltares.nl/en/software-and-data/products/delft3d-flexible-mesh-suite>`_. This can be be used by anyone with software including Podman, Docker, Buildx and more. Note that this example builds from a `Red Hat Universal Base Image (UBI) <https://www.redhat.com/en/blog/introducing-red-hat-universal-base-image>`_. This can be switched to e.g. RockyLinux if the reader prefers.
+The following set of :plaintext:`Dockerfile`'s are used to build containers providing the `Delft3D FM Suite <https://www.deltares.nl/en/software-and-data/products/delft3d-flexible-mesh-suite>`_. This can be be used by anyone with containerisation software including Podman, Docker, Buildx and more. Note that this example builds from a `Red Hat Universal Base Image (UBI) <https://www.redhat.com/en/blog/introducing-red-hat-universal-base-image>`_. This can be switched to e.g. RockyLinux if the reader prefers.
 
 Intel
 ~~~~~
@@ -132,7 +132,7 @@ This copies the Delft3D source code and the :plaintext:`config-intel.sh` script 
 .. literalinclude:: /_static/config-intel.sh
    :language: bash
 
-From this image, various images are built providing various Delft3D oferings.
+From this image, various images are built providing various Delft3D ofFerings.
 
 Delft3D FM
 ~~~~~~~~~~
@@ -170,4 +170,4 @@ The file below is :plaintext:`entrypoint.sh` in this case:
 Execution
 ~~~~~~~~~
 
-We then expose this images by converting them to Singularity images using the methods in :doc:`/containerisation/singularity` and use wrapper scripts for ease of use.
+We then expose these images by converting them to Singularity images using the methods in :doc:`/containerisation/singularity` and use wrapper scripts for ease of use.
