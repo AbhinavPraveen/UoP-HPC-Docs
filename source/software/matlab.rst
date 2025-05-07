@@ -10,10 +10,16 @@ Using MATLAB
 
 MATLAB can be used through the following methods:
 
+* Using MATLAB Graphically through the 'MatlabInJupyterLab' LiCO Cloud Tool
 * Using a Graphical User Interface through X11 forwarding
 * Using a command-line/nodisplay MATLAB session
 * Executing MATLAB scripts as batch jobs
 * Using MATLAB Parallel Server to distribute computations
+
+'MatlabInJupyterLab' LiCO Cloud Tool
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The 'MatlabInJupyterLab' LiCO Cloud Tool provides Jupyter and the `MATLAB Integration for Jupyter <https://uk.mathworks.com/products/reference-architectures/jupyter.html>`__. This allows you to either get a full MATLAB interface from the browser or to use MATLAB code within a Jupyter notebook. Pleae login and access the internal page `Cloud Tools <https://docs.lovelace.plymouth.ac.uk/private/lico/cloudtools>`_ for instructions on how to do this/
 
 Graphical User Interface Session
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
