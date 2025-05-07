@@ -3,7 +3,7 @@
 Running Containerised MPI Workloads with Slurm
 ==============================================
 
-Running Containerised MPI Workloads is not recommended for most users do to its complexity. It is possible however and provides some advantages in reproducibility and allows use of applications that do not support the environment on the Lovelace cluster (e.g. an application does not support the current version of the Red Hat Enterprise Linux distribution).
+Running Containerised MPI Workloads is not recommended for most users do to its complexity. It is possible however, provides some advantages in reproducibility, and allows use of applications that do not support the environment on the Lovelace cluster (e.g. an application does not support the current version of the Red Hat Enterprise Linux distribution).
 
 This will consist of building a container that is compatibile with the host environment (including Slurm, PMIx, and OFED) with Podman. We extend the container to include the MPI application using the example of `HiRep <https://github.com/claudiopica/HiRep>`_. We will then convert the container to a Singularity container - this makes it easier to allow the container to access MPI, Network and Device information from the host as this is allowed by default by Singularity but restricted by Podman. We will finally write a Job Submission script to run the container and the workload within the container.
 
