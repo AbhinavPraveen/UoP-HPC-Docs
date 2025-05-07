@@ -1,0 +1,22 @@
+FROM localhost/openmpi
+
+RUN yum install -y bsdtar
+
+COPY 57bac424dec078bbccb0d3eeb7e32a027d023685.zip /root/hirep.zip
+
+WORKDIR /hirep
+RUN bsdtar xvf /root/hirep.zip --strip-components=1
+RUN ln -s /usr/bin/python3 /usr/bin/python
+RUN \
+\
+[ -z "$CC" ] && CC="$(which cc)" && \
+mpicc -show && \
+\
+sed -i "s|^CFLAGS =.*|CFLAGS = -Wall -Wshadow -std=c11 -O3 -march=native -pipe |g" Make/MkFlags && \
+sed -i "s|^MPICC = .*|MPICC = $(which mpicc) |g" Make/MkFlags && \
+sed -i "s|^CC = .*|CC = ${CC} |g" Make/MkFlags && \
+sed -i "s|^INCLUDE = .*|INCLUDE = |g" Make/MkFlags && \
+\
+cd HMC && \
+make -j
+RUN cd TestProgram/DiracOperator && make -j

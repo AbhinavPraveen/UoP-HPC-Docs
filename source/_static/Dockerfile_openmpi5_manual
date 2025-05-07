@@ -1,0 +1,28 @@
+FROM registry.access.redhat.com/ubi9:9.5
+
+RUN dnf groupinstall -y "Development Tools"
+RUN dnf install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm && crb enable && dnf config-manager --set-enabled codeready-builder-for-rhel-9-x86_64-rpms
+RUN dnf install -y perl-sigtrap lsof pciutils ethtool gcc-gfortran tcl numactl-libs pciutils-libs tk libnl3
+
+ADD MLNX_OFED_LINUX-24.10-2.1.8.0-rhel9.5-x86_64.tgz /
+RUN yes | /MLNX_OFED_LINUX-24.10-2.1.8.0-rhel9.5-x86_64/mlnxofedinstall --user-space-only --without-fw-update
+RUN rpm -i /MLNX_OFED_LINUX-24.10-2.1.8.0-rhel9.5-x86_64/RPMS/ucx-knem-1.18.0-1.2410068.x86_64.rpm /MLNX_OFED_LINUX-24.10-2.1.8.0-rhel9.5-x86_64/RPMS/knem-1.1.4.90mlnx3-OFED.23.10.0.2.1.1.rhel9u5.x86_64.rpm
+
+RUN dnf install -y environment-modules wget hwloc hwloc-devel libevent libevent-devel python3 python3-devel pam-devel readline-devel mariadb-devel perl bzip2-devel logrotate numactl-devel
+WORKDIR /root
+
+COPY pmix-5.0.6-1.src.rpm /root
+COPY .rpmmacros /root
+RUN rpmbuild --rebuild --noclean pmix-5.0.6-1.src.rpm
+RUN rpm -i /root/rpmbuild/RPMS/x86_64/pmix-5.0.6-1.el9.x86_64.rpm
+RUN rm .rpmmacros
+
+COPY prrte-3.0.8-1.src.rpm /root
+COPY .rpmmacros /root
+RUN rpmbuild --rebuild --noclean prrte-3.0.8-1.src.rpm
+RUN rpm -i /root/rpmbuild/RPMS/x86_64/prrte-3.0.8-1.el9.x86_64.rpm
+RUN rm .rpmmacros
+
+COPY openmpi-5.0.6-1.src.rpm /root
+RUN rpmbuild --rebuild --noclean --define 'configure_options --with-slurm --with-verbs --with-knem=/opt/knem-1.1.4.90mlnx3' openmpi-5.0.6-1.src.rpm
+RUN rpm -e openmpi mpitests_openmpi && rpm -i /root/rpmbuild/RPMS/x86_64/openmpi-5.0.6-1.el9.x86_64.rpm

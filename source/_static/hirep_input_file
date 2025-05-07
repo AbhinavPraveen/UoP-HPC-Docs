@@ -1,0 +1,10 @@
+GLB_T = 96
+GLB_X = 48
+GLB_Y = 48
+GLB_Z = 48
+NP_T = 8
+NP_X = 4
+NP_Y = 2
+NP_Z = 2
+rlx_level = 1
+rlx_seed = 12345 
