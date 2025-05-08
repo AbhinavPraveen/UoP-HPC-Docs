@@ -28,9 +28,11 @@ To use a container interactively with Podman, the basic syntax is:
 
    podman run -it --rm CONTAINER_NAME ARGS
 
-To use a container non-interactivel with a GPU with Podman, the basic syntax is:
+To use a container non-interactively with a GPU with Podman, the basic syntax is:
 
-**TODO**
+.. code-block:: bash
+
+   podman run --rm --device nvidia.com/gpu=all CONTAINER_NAME ARGS
 
 To make a folder on the host available within the container environment, you must additionally use a bind-mount. For example, to make your home folder available at the same place inside a non-interactive coontainer:
 
