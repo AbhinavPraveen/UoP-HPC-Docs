@@ -95,6 +95,7 @@ To run the same python script on a GPU node with a GPU available, you could use 
 
    #!/bin/bash
    #SBATCH -p gpu_l40s
+   #SBATCH --gpus 1
 
    podman run --volume "$HOME:$HOME" --rm --device nvidia.com/gpu=all tensorflow-plus "$HOME/myscript.py"
 
