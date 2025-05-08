@@ -22,7 +22,7 @@ To use a container non-interactively with Podman, the basic syntax is:
 
    podman run --rm CONTAINER_NAME ARGS
 
-To use a non-interactively with Podman, the basic syntax is:
+To use a container interactively with Podman, the basic syntax is:
 
 .. code-block:: bash
 
