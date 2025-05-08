@@ -92,7 +92,13 @@ If you have a python script in your home folder called :plaintext:`myscript.py`,
 
 To run the same python script on a GPU node with a GPU available, you could use the following:
 
-**TODO**
+.. code-block:: sbatch
+
+   #!/bin/bash
+   #SBATCH -p gpu_l40s
+
+   cd
+   podman run --volume "$HOME:$HOME" --rm --device nvidia.com/gpu=all tensorflow-plus "$HOME/myscript.py"
 
 Build a Container from Rocky Linux 9 with Python and :plaintext:`requirements.txt` (Podman)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
