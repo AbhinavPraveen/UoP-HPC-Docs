@@ -5,7 +5,7 @@ Podman
 
 Podman is a container platform focused on security. It is very robust and is supported by `Red Hat <https://www.redhat.com/en/topics/containers/what-is-podman>`__. Podman supports images in the Open Container Initiative (OCI) format -- these are also supported by Docker, Kubernetes and Singularity among others.
 
-To get more information about Singularity, the following manual pages are available:
+To get more information about Podman, the following manual pages are available:
 
 .. code-block:: bash
 
@@ -34,20 +34,20 @@ To use a container non-interactively with a GPU with Podman, the basic syntax is
 
    podman run --rm --device nvidia.com/gpu=all CONTAINER_NAME ARGS
 
-To make a folder on the host available within the container environment, you must additionally use a bind-mount. For example, to make your home folder available at the same place inside a non-interactive coontainer:
+To make a folder on the host available within the container environment, you must additionally use a bind-mount. For example, to make your home folder available at the same place inside a non-interactive container:
 
 .. code-block:: bash
 
    podman run --volume "$HOME:$HOME" --rm CONTAINER_NAME ARGS
 
-The containers will be pulled automatically if they available from `DockerHub <https://hub.docker.com/r>`__ and not available locally.
+The containers will be pulled automatically if they are available from `DockerHub <https://hub.docker.com/r>`__ and not available locally.
 
 Building Containers with Podman
 -------------------------------
 
 With Podman, containers can be built by using a :plaintext:`Dockerfile`. See `Dockerfile reference <https://docs.docker.com/reference/dockerfile/>`__ for the full syntax.
 
-To build a container, create a folder for the :plaintext:`Dockerfile`, say :plaintext:`CONTAINER_FOLDER`. Then store or write a :plaintext:`Dockerfile` at :plaintext:`CONTAINER_FOLDER/Dockerfile`. Then, to build the container, use the basic syntax is:
+To build a container, create a folder for the :plaintext:`Dockerfile`, say :plaintext:`CONTAINER_FOLDER`. Then store or write a :plaintext:`Dockerfile` at :plaintext:`CONTAINER_FOLDER/Dockerfile`. Then, to build the container, use:
 
 .. code-block:: bash
 
