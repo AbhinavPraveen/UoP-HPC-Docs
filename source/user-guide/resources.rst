@@ -83,9 +83,22 @@ Please note that Slurm job scheduler uses the term 'partitions' to
 refer to queues, and therefore you may see the word partition used
 interchangeably both here and on other sites.
 
-There are eight partitions available on the Lovelace cluster. These correspond to two sets of four partiitons. These are the standard queues (:plaintext:`cpu`, :plaintext:`cpu_highmem`, :plaintext:`gpu_h100`, :plaintext:`gpu_l40s`) and the billed queues (:plaintext:`cpu-billed`, :plaintext:`cpu_highmem-billed`, :plaintext:`gpu_h100-billed`, :plaintext:`gpu_l40s-billed`).
+There are eight partitions available on the Lovelace cluster. These correspond to two sets of four partiitons. These are the standard queues (:plaintext:`cpu_shared`, :plaintext:`cpu`, :plaintext:`cpu_highmem`, :plaintext:`gpu_h100`, :plaintext:`gpu_l40s`) and the billed queues (:plaintext:`cpu-billed`, :plaintext:`cpu_highmem-billed`, :plaintext:`gpu_h100-billed`, :plaintext:`gpu_l40s-billed`).
 
 You may only schedule task on the billed queues if there is funding assosciated with your account. Jobs submitted to these queues will be prioritised over those submitted to the standard queue.
+
+:plaintext:`cpu_shared`
+~~~~~~~~~~~~~~~~~~~~~~~
+
+To run on the :plaintext:`cpu_shared` queue, add the following to the header of your
+submission script:
+
+.. code-block:: sbatch
+
+   #SBATCH -p cpu_shared
+   #SBATCH --cpus-per-task 1
+
+This specifies that your job requires exactly one CPU core. If your workload supports multithreading/multiprocessing, you may request a higher number of cores by increasing the value of the :plaintext:`--cpus-per-task` parameter. For example, if your workload users three cores, you could specify :plaintext:`--cpus-per-task 3`. A value of up to 64 is supported on the Lovelace cluster.
 
 :plaintext:`cpu`
 ~~~~~~~~~~~~~~~~
@@ -96,6 +109,8 @@ submission script :
 .. code-block:: sbatch
 
    #SBATCH -p cpu
+
+This queue will always allocate a full 64 core node exclusively to your job.
 
 :plaintext:`cpu_highmem`
 ~~~~~~~~~~~~~~~~~~~~~~~~
