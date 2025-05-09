@@ -62,7 +62,7 @@ You can view just your jobs by using:
 
 .. code-block:: bash
 
-    squeue -u <username>
+    squeue --me
 
 The scancel command
 ~~~~~~~~~~~~~~~~~~~~
