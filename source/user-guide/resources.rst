@@ -50,7 +50,7 @@ See the sections below for details on how to write job scripts.
 The qstat command
 ~~~~~~~~~~~~~~~~~
 
-Use the command qstat to view the job queue. For example:
+Use the command below to view the job queue. For example:
 
 .. code-block:: bash
 
