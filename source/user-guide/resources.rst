@@ -122,6 +122,8 @@ submission script :
 
    #SBATCH -p sbatch
 
+This queue will always allocate a full 64 core node exclusively to your job.
+
 .. _gpu_h100_job:
 
 :plaintext:`gpu_h100`
