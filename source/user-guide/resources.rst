@@ -48,7 +48,7 @@ This will submit your job script :plaintext:`job_script` to the job-queues.
 See the sections below for details on how to write job scripts.
 
 The squeue command
-~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~
 
 Use the command below to view the job queue. For example:
 
