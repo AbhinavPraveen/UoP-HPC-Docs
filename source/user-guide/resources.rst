@@ -137,7 +137,7 @@ submission script :
    #SBATCH -p gpu_h100
    #SBATCH --gpus 1
 
-Each job must request exactly one GPU if running on this partition.
+Each job must request at least one GPU if running on this partition.
 
 .. _gpu_l40s_job:
 
@@ -152,7 +152,7 @@ submission script :
    #SBATCH -p gpu_l40s
    #SBATCH --gpus 1
 
-Each job must request exactly one GPU if running on this partition.
+Each job must request at least one GPU if running on this partition.
 
 Sometimes some nodes are "down" and less nodes are available.
 
