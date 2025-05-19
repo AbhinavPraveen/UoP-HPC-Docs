@@ -10,9 +10,6 @@ Upcoming sessions are on:
 * Friday 23rd May - 11:00 to 12:00 - PSQ C002
 * Thursday 29th May - 11:00 to 12:00 - BGB401
 
-.. note::
-   There was previously a session scheduled for Monday 5th May - 14:00 to 15:00 - BGB 401 in error as this is a bank holiday. This session will be held on Tuesday 6th May - 15:00 to 16:00 - BGB 410 instead.
-
 Past sessions were on:
 
 * Tuesday 13th May - 11:00 to 12:00 - Rolle 214
