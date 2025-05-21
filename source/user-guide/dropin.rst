@@ -9,6 +9,9 @@ Upcoming sessions are on:
 
 * Friday 23rd May - 11:00 to 12:00 - PSQ C002
 * Thursday 29th May - 11:00 to 12:00 - BGB401
+* Thursday 5th June - 11:00 to 12:00 - BGB 412
+* Monday 9th June - 14:00 to 15:00 - BGB 407
+* Friday 20th June - 11:00 to 12:00 - ROLLE 202
 
 Past sessions were on:
 
