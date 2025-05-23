@@ -13,7 +13,7 @@ Welcome to the University of Plymouth's Public Documentation on High Performance
    :caption: Contents:
    
    Login and access the internal site <https://docs.lovelace.plymouth.ac.uk/private/>
-   Passwords Expiry and Updates (Login Required) <https://docs.lovelace.plymouth.ac.uk/private/lico/>
+   Passwords Expiry and Updates (Login Required) <https://docs.lovelace.plymouth.ac.uk/private/user-guide/passwords>
    user-guide/introduction
    user-guide/policy
    user-guide/dropin
