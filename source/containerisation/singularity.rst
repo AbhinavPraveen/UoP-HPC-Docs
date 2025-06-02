@@ -29,7 +29,7 @@ The general format to converting an image from a container registry (such as `Do
 
 .. code-block:: bash
 
-   singularity build SIF_FILE_NAME docker://SIF_FILE_PATH
+   singularity build SIF_FILE_NAME docker://DOCKER_PATH
 
 The general format to running a container interactively is:
 
