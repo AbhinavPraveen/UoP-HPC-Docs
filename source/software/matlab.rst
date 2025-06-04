@@ -57,3 +57,12 @@ You may then run this script on a compute node as follows:
 
    module load matlab_parallel_server
    srun matlab -nodisplay < hello.m
+
+Note that :bash:`matlab` also takes a :plaintext:`-batch` option which can used to evaluate statements non-interactively as follows:
+
+.. code-block:: bash
+
+   module load matlab_parallel_server
+   srun matlab -batch 'disp("Hello, World!")'
+
+See also `Commonly Used Startup Options <https://uk.mathworks.com/help/matlab/matlab_env/commonly-used-startup-options.html>`_.
