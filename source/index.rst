@@ -21,6 +21,7 @@ Welcome to the University of Plymouth's Public Documentation on High Performance
    user-guide/resources
    user-guide/modules
    user-guide/transfer
+   user-guide/projects
    user-guide/parallel
    software/index
    containerisation/index
