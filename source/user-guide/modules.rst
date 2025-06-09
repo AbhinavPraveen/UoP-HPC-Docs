@@ -30,8 +30,7 @@ The list of the modules loaded  can be obtained by typing:
      5) libiconv/1.17-6nlfqwe       11) libpciaccess/0.17-d5wcj52  17) numactl/2.0.18-xy2slzw   23) krb5/1.21.3-i3rz3pq           29) gdrcopy/2.4.1-xyc5lwi     35) openmpi/5.0.5-fp6i5jk
      6) xz/5.4.6-rb3mavc            12) ncurses/6.5-pnmzftp        18) bzip2/1.0.8-hwh4cnv      24) libedit/3.1-20240808-fxke3py  30) libnl/3.3.0-haaq6e3
 
-   Basic usage of the :bash:`module` command is covered below. For
-   full documentation please see:
+Basic usage of the :bash:`module` command is covered below. For full documentation please see:
 
 -  `User Guide for Lmod <https://lmod.readthedocs.io/en/latest/010_user.html>`_
 
