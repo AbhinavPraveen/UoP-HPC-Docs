@@ -9,7 +9,7 @@ Lovelace Cluster Public Documentation
 Welcome to the University of Plymouth's Public Documentation on High Performance Compute and the Lovelace cluster. This information on this site is shared with the intention of being useful to all HPC users. See the link below for the Internal Documentation site.
 
 .. note::
-   There is an upcoming HPC training event on Tuesday 24/06/2025 and Thursday 26/06/2025. Please see the `eventbrite page <https://www.eventbrite.co.uk/e/hpc-training-introduction-to-linux-and-hpc-tickets-1407341669819>`_ to register.
+   There is an upcoming HPC training event on Tuesday 24/06/2025 and Thursday 26/06/2025. Please see the `event page <https://www.plymouth.ac.uk/whats-on/hpc-training>`_ for more info.
 
 .. toctree::
    :maxdepth: 2
