@@ -41,7 +41,7 @@ Finally we create a job submission file called, say, :plaintext:`gromacs.slurm` 
 
 Here, note that:
 
-* The :plaintext:`#!/bin/bash` header specifies that the BASH interpreter for the script.
+* The :plaintext:`#!/bin/bash` header specifies that the BASH interpreter should be used for the script.
 * The :plaintext:`#SBATCH --nodes 4` header specifies to distribute the computation should be distributed over 4 nodes. **This number can be increased or decreased independently.**
 * The :plaintext:`#SBATCH --ntasks-per-node=8` header specifies that eight 'tasks' should be created on each node. This is a reasonable default and does not necessarily need to be changed.
 * The :plaintext:`srun` command interacts with the Job Scheduler to spawn the GROMACS application (:plaintext:`gmx_mpi`) once for each task. 
