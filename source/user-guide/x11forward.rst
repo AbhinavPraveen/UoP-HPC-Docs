@@ -32,3 +32,4 @@ You should then see a pair of googly eyes on your desktop. If you see this, then
 Examples of software that could be used with X11 forwarding include:
 
 * :doc:`/software/matlab`
+* :doc:`/software/ansys`
