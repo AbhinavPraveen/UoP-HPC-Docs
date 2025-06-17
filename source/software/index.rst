@@ -11,3 +11,4 @@ Examples of notable software found on the HPC cluster is given below.
    cuda
    matlab
    gromacs
+   ansys
