@@ -65,4 +65,4 @@ To generalise, users could use the following as a template:
    module load gromacs
    srun --mpi=pmix gmx_mpi mdrun GROMACS_ARGUMENTS
 
-Where :plaintext:`NUMBER_OF_NODES` and `GROMACS_ARGUMENTS` must be modified.
+Where :plaintext:`NUMBER_OF_NODES` and :plaintext:`GROMACS_ARGUMENTS` must be modified.
