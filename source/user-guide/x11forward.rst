@@ -5,7 +5,7 @@ Running Graphical Applications With X11 Forwarding
 
 Graphical applications such as Ansys Workbench or MATLAB can be ran on a compute node and viewed on your local machine using X11 forwarding. X11 is a display protocol capable of operating over the network
 
-Tis is possible with two approaches:
+This is possible with two approaches:
 
 * Connecting the the Login Node with X11 forwarding enabled and then using Slurm's (Slurm is the job scheduler) X11 forwarding functionality to run a job on a compute node
 * Getting a Job Allocation on a compute node and connecting to it directly
