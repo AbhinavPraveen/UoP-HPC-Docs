@@ -24,13 +24,15 @@ The 'MatlabInJupyterLab' LiCO Cloud Tool provides Jupyter and the `MATLAB Integr
 Graphical User Interface Session
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To initiate a Graphical User Interface session, **connect to the login node or a node which is allocated to you with X11 Forwarding enabled** (please Login and access the internal site `<https://docs.lovelace.plymouth.ac.uk/private/>`_ for instructions on this). Assuming that you have set up an ssh host named :plaintext:`lovelace` referring to the login node and you are on a supported platform, simply run:
+To initiate a Graphical User Interface session, **connect to the login node with X11 Forwarding enabled** (please Login and access the internal site `<https://docs.lovelace.plymouth.ac.uk/private/>`_ for instructions on this). Assuming that you have set up an ssh host named :plaintext:`lovelace` referring to the login node and you are on a supported platform, simply run:
 
 .. code-block:: bash
 
    ssh -XY lovelace
    module load matlab_parallel_server
-   matlab
+   srun --x11 matlab
+
+MATLAB will be run on a compute node but its interface will be visible to you on your local device.
 
 Command-Line Session
 ~~~~~~~~~~~~~~~~~~~~
