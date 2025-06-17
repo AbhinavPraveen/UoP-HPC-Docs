@@ -46,7 +46,8 @@ Here, note that:
 * The :plaintext:`#SBATCH --ntasks-per-node=8` header specifies that eight 'tasks' should be created on each node. This is a reasonable default and does not necessarily need to be changed.
 * The :plaintext:`srun` command interacts with the Job Scheduler to spawn the GROMACS application (:plaintext:`gmx_mpi`) once for each task. 
 * The :plaintext:`--mpi=pmix` requests Slurm to set up `PMIx <https://pmix.org/>`_ to allow OpenMPI to communicate and initialise itself.
-* The :plaintext:`gmx_mpi mdrun` command starts the main computation chemistry engine within GROMACS with MPI support. Details of this command can be found at `<https://manual.gromacs.org/current/onlinehelp/gmx-mdrun.html>`_. The remainder of the final line specifies options to the computation chemistry engine within gromacs. **This can be changed freely by the user.**
+* The :plaintext:`gmx_mpi mdrun` command starts the main computation chemistry engine within GROMACS with MPI support. Details of this command can be found at `<https://manual.gromacs.org/current/onlinehelp/gmx-mdrun.html>`_.
+* The remainder of the final line specifies options to the computation chemistry engine within gromacs. **This can be changed freely by the user as described in the documentation linked above.**
 
 We can then submit the job file using the following command. Note that the archive extracted as above is expected to be in teh same folder as the job submission file and the current working directory.
 
