@@ -49,7 +49,7 @@ Here, note that:
 * The :plaintext:`gmx_mpi mdrun` command starts the main computation chemistry engine within GROMACS with MPI support. Details of this command can be found at `<https://manual.gromacs.org/current/onlinehelp/gmx-mdrun.html>`_.
 * The remainder of the final line specifies options to the computation chemistry engine within GROMACS. **This can be changed freely by the user as described in the documentation linked above.**
 
-We can then submit the job file using the following command. Note that the archive extracted as above is expected to be in teh same folder as the job submission file and the current working directory.
+We can then submit the job file using the following command. Note that the archive extracted as above is expected to be in the same folder as the job submission file and the current working directory.
 
 .. code-block:: bash
 
