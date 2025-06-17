@@ -16,6 +16,12 @@ To use GROMACS, it is sufficient to load the module (see also :doc:`/user-guide/
 
    module load gromacs
 
+GROMACS is then available as the :bash:`gmx_mpi` command. For example, the help text can be shown by running:
+
+.. code-block:: bash
+
+   gmx_mpi -h
+
 Sample Multi-Node Job
 ---------------------
 
