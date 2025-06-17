@@ -10,6 +10,11 @@ Using GROMACS on the Lovelace Cluster
 
 The GROMACS installation on the Lovelace cluster supports multi-node computation using the OpenMPI implementation of the MPI (Message Passing Interface) standard. This means that, during multi-node computation, data between nodes is transferred using our high-performance NDR200 interconnect using technologies like RDMA (Remote Direct Memory Access). We also support the use of Nvidia GPU Acceleration through the Nvidia CUDA.
 
+To load GROMACS, it is sufficient to load the module (see also :doc:`/user-guide/modules`) using the command below:
+
+.. code-block:: bash
+
+   module load gromacs
 
 Sample Multi-Node Job
 ---------------------
