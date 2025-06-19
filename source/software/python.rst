@@ -182,8 +182,18 @@ Users can also create Virtual Environments with these Python Versions. For examp
 Conda
 -----
 
-A conda module is also provided. To use it, simply load the module:
+A conda module is also provided. To use it, load the module and set a conda package directory within your home directory:
 
 .. code-block:: bash
 
    module load conda
+   mkdir -p ~/conda/pkgs && conda config --add pkgs_dirs ~/conda/pkgs
+
+A conda environment can then be created an used as follows:
+
+.. code-block:: bash
+
+   conda create -p ~/test_condaenv
+   conda activate ~/test_condaenv
+   conda install numpy
+   python -c 'import numpy; print(numpy.eye(3))'
