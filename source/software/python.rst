@@ -182,7 +182,7 @@ Users can also create Virtual Environments with these Python Versions. For examp
 Installing Kernel To Use Virtual Environment in Jupyter
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To use Python Virtual Environment with Jupyter, install the :plaintext:`ipykernel` Python package inside the Virtual Environment and use it to install a Jupyter Kernel.
+To use a Python Virtual Environment with Jupyter, install the :plaintext:`ipykernel` Python package inside the Virtual Environment and use it to install a Jupyter Kernel.
 
 .. code-block:: bash
 
@@ -212,7 +212,7 @@ A conda environment can then be created an used as follows:
 Installing Kernel To Use Conda Environment in Jupyter
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To use Conda Environment with Jupyter, install the :plaintext:`ipykernel` Python package inside the Conda Environment and use it to install a Jupyter Kernel.
+To use a Conda Environment with Jupyter, install the :plaintext:`ipykernel` Python package inside the Conda Environment and use it to install a Jupyter Kernel.
 
 .. code-block:: bash
 
