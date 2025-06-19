@@ -179,6 +179,17 @@ Users can also create Virtual Environments with these Python Versions. For examp
    <DIAgonal sparse matrix of dtype 'float64'
            with 3 stored elements (1 diagonals) and shape (3, 3)>
 
+Installing Kernel To Use Virtual Environment in Jupyter
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To use Python Virtual Environment with Jupyter, install the :plaintext:`ipykernel` Python package inside the Virtual Environment and use it to install a Jupyter Kernel.
+
+.. code-block:: bash
+
+   source myvirtualenv/bin/activate
+   pip install ipykernel
+   python -m ipykernel install --user --name=myvirtualenvkernel
+
 Conda
 -----
 
@@ -197,3 +208,14 @@ A conda environment can then be created an used as follows:
    conda activate ~/test_condaenv
    conda install numpy
    python -c 'import numpy; print(numpy.eye(3))'
+
+Installing Kernel To Use Conda Environment in Jupyter
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To use Conda Environment with Jupyter, install the :plaintext:`ipykernel` Python package inside the Conda Environment and use it to install a Jupyter Kernel.
+
+.. code-block:: bash
+
+   conda activate ~/test_condaenv
+   conda install python ipykernel
+   python -m ipykernel install --user --name=myvirtualenvkernel
