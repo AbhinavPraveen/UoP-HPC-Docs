@@ -30,7 +30,7 @@ To initiate a Graphical User Interface session, **connect to the login node with
 
    ssh -XY lovelace
    module load matlab_parallel_server
-   srun --x11 matlab
+   srun --x11 matlab -desktop
 
 MATLAB will be run on a compute node but its interface will be visible to you on your local device.
 
