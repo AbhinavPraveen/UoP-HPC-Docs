@@ -159,6 +159,19 @@ Sometimes some nodes are "down" and less nodes are available.
 If you have special request, contact `hpcsupport@plymouth.ac.uk
 <mailto:hpcsupport@plymouth.ac.uk>`_.
 
+Time Limits
+-----------
+
+Time limits will be applied to all jobs on the free queues (:plaintext:`cpu_shared`, :plaintext:`cpu`, :plaintext:`cpu_highmem`, :plaintext:`gpu_h100`, :plaintext:`gpu_l40s`) on the Lovelace cluster. By default, jobs will have a Time Limit of 1 hour. This means that, **by default**, if your job runs for longer than 1 hour, it will automatically be terminated. In the event that you require your job to run for more than 1 hour, you must add a header specifiying a time limit such as:
+
+.. code-block:: sbatch
+
+   #SBATCH --time "12:30:15"
+
+This example increases the time limit from the default limit of 1 hour to a limit of 12 hours, 30 minutes, and 15 seconds.
+
+You can specify a time limit of up to 3 days or, equivalently, 72 hours. The time limit is also used by the job scheduler to, when a reservation is scheduled (e.g. for a training event or for teaching), decide whether to schedule the job in advance of the reservation. As such, a job with a lower time limit specified may sometimes be scheduled more quickly than one that has a higher time limit specified.
+
 Accounts
 --------
 
