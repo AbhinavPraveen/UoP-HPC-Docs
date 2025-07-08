@@ -7,6 +7,8 @@ The HPC Admin team hosts periodic drop in sessions for general support on using 
 
 Upcoming sessions are on:
 
+* Tuesday 15th July - 15:00 to 16:00 - PSQ B004
+* Friday 25th July - 11:00 to 12:00 - BGB 406
 
 Past sessions were on:
 
