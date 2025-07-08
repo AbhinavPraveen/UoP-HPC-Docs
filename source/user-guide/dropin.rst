@@ -10,6 +10,8 @@ Upcoming sessions are on:
 * Tuesday 15th July - 15:00 to 16:00 - PSQ B004
 * Friday 25th July - 11:00 to 12:00 - BGB 406
 
+Additional sessions can be scheduled were necessary. Please contact `hpcsupport@plymouth.ac.uk <mailto:hpcsupport@plymouth.ac.uk>`_ if you would like to request this.
+
 Past sessions were on:
 
 * Friday 20th June - 11:00 to 12:00 - ROLLE 202
