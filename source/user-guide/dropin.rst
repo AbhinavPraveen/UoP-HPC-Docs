@@ -7,10 +7,10 @@ The HPC Admin team hosts periodic drop in sessions for general support on using 
 
 Upcoming sessions are on:
 
-* Friday 20th June - 11:00 to 12:00 - ROLLE 202
 
 Past sessions were on:
 
+* Friday 20th June - 11:00 to 12:00 - ROLLE 202
 * Monday 9th June - 14:00 to 15:00 - BGB 407
 * Thursday 5th June - 11:00 to 12:00 - BGB 412
 * Thursday 29th May - 11:00 to 12:00 - BGB401
