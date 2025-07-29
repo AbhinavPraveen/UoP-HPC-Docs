@@ -5,3 +5,7 @@
 .. role:: bash(code)
   :language: bash
   :class: highlight
+
+.. role:: sbatch(code)
+  :language: sbatch
+  :class: highlight
