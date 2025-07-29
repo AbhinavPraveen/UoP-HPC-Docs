@@ -228,3 +228,19 @@ This job runs the :plaintext:`nvidia-smi` utility on a GPU node with a GPU, retu
 
    nvidia-smi
 
+Submitting Interactive Jobs
+---------------------------
+
+Interactive jobs can be submitted using the :bash:`srun` utility. For example, running the below will request an interactive shell session on a CPU node (using the :plaintext:`cpu_shared` partition):
+
+.. code-block:: bash
+
+   srun -p cpu_shared --pty bash
+
+Similarly, you can request an interactive session on a GPU node. The example below also sets a time limit of one hour and uses the :plaintext:`gpu_l40s` partition.
+
+.. code-block:: bash
+
+   srun -p gpu_l40s --time "12:30:15" --pty bash
+
+Note that most arguments to :sbatch:`#SBATCH` as given above also apply to :bash:`srun`.
