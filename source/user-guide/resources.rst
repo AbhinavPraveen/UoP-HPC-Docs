@@ -241,6 +241,6 @@ Similarly, you can request an interactive session on a GPU node. The example bel
 
 .. code-block:: bash
 
-   srun -p gpu_l40s --gpus 1 --time "12:30:15" --pty bash
+   srun -p gpu_l40s --gpus 1 --time "1:00:00" --pty bash
 
 Note that most arguments to :sbatch:`#SBATCH` as given above also apply to :bash:`srun`.
