@@ -7,15 +7,13 @@ The HPC Admin team hosts periodic drop in sessions for general support on using 
 
 Upcoming sessions are on:
 
-* Friday 25th July - 11:00 to 12:00 - BGB 406
-
-.. warning::
-   There was previously a session scheduled on Tuesday 15th July - 15:00 to 16:00 - PSQ B004. This has been cancelled due to maintenance works.
+* Thursday 21st August - 13:00 to 14:00 - Rolle 601
 
 Additional sessions can be scheduled were necessary. Please contact `hpcsupport@plymouth.ac.uk <mailto:hpcsupport@plymouth.ac.uk>`_ if you would like to request this.
 
 Past sessions were on:
 
+* Friday 25th July - 11:00 to 12:00 - BGB 406
 * Friday 20th June - 11:00 to 12:00 - ROLLE 202
 * Monday 9th June - 14:00 to 15:00 - BGB 407
 * Thursday 5th June - 11:00 to 12:00 - BGB 412
