@@ -20,6 +20,7 @@ Welcome to the University of Plymouth's Public Documentation on High Performance
    user-guide/introduction
    user-guide/policy
    user-guide/dropin
+   Using JupyterHub (**BETA**) for Jupyter, Rstudio, Ansys Workbench and More on the Lovelace Cluster <https://docs.lovelace.plymouth.ac.uk/private/jupyterhub/>
    Using LiCO for Jupyter, Rstudio, and More on the Lovelace Cluster (Login Required) <https://docs.lovelace.plymouth.ac.uk/private/lico/>
    user-guide/resources
    user-guide/modules
