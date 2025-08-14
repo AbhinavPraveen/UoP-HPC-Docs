@@ -9,7 +9,6 @@ Upcoming sessions are on:
 
 * Friday 5th September - 10:00 to 11:00 - BGB 404
 * Thursday 21st August - 13:00 to 14:00 - Rolle 601
-* Thursday 21st August - 13:00 to 14:00 - Rolle 601
 
 Additional sessions can be scheduled were necessary. Please contact `hpcsupport@plymouth.ac.uk <mailto:hpcsupport@plymouth.ac.uk>`_ if you would like to request this.
 
