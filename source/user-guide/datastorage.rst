@@ -25,7 +25,7 @@ Users should notice their own home directory in the output of :bash:`ls -lah /us
 Performance Notes
 -----------------
 
-As the cluster has both very fast SSD storage and HDD storage, the HPC Admin Team will attempt to migrate data so that 'hot' data is on the SSD disks and 'cold' data is on HDD disks. Because more storage is available on the :plaintext:`/scratch` filesystem, it may be more likely that your data remains on the hot storage if you store your data on the :plaintext:`/scratch` filesystem. The heuristic used to determine whether data is hot or cold is simply the time at which the data was most recently accessed and files are prioritised in order of this.
+As the cluster has both very fast SSD storage and HDD storage, the HPC Admin Team will migrate data so that 'hot' data is on the SSD disks and 'cold' data is on HDD disks. Because more storage is available on the :plaintext:`/scratch` filesystem, it may be more likely that your data remains on the hot storage if you store your data on the :plaintext:`/scratch` filesystem. The heuristic used to determine whether data is hot or cold is simply the time at which the data was most recently accessed and files are prioritised in order of this.
 
 Users can use the command below to determine whether a file is on the SSD storage or on the HDD storage. If on the SSD storage, the output will show :plaintext:`storage pool name: system`. If on the HDD storage, the output will show :plaintext:`storage pool name: data`.
 
