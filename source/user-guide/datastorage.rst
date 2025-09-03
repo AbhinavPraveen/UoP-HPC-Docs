@@ -16,7 +16,7 @@ On the Lovelace cluster, users have access to two filesystems, :plaintext:`/user
    find /scratch
 
 
-Users should notice their own home directory in the output of :bash:`ls -lah /users`. Users should also have been allocated one or multiple directories under :plaintext:`/scratch`. Please move data (for example, using the :bash:`mv` command) to the :plaintext:`/scratch` directory where possible; particularly when storing data for a long period of time, such as for the duration of a project.
+Users should notice their own home directory in the output of :bash:`ls -lah /users`. Users should also have been allocated one or multiple directories under :plaintext:`/scratch` corresponding to the projects they are part of. Please move data (for example, using the :bash:`mv` command) to the :plaintext:`/scratch` directory where possible; particularly when storing data for a long period of time, such as for the duration of a project.
 
 .. note::
 
