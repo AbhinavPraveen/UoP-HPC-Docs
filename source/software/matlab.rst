@@ -10,19 +10,21 @@ Using MATLAB
 
 MATLAB can be used through the following methods:
 
-* Using MATLAB Graphically through the 'MatlabInJupyterLab' LiCO Cloud Tool
+* Using MATLAB Graphically through JupyterHub
 * Using a Graphical User Interface through X11 forwarding
 * Using a command-line/nodisplay MATLAB session
 * Executing MATLAB scripts as batch jobs
 * Using MATLAB Parallel Server to distribute computations
 
-'MatlabInJupyterLab' LiCO Cloud Tool
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MATLAB with JupyterHub
+~~~~~~~~~~~~~~~~~~~~~~
 
-The 'MatlabInJupyterLab' LiCO Cloud Tool provides Jupyter and the `MATLAB Integration for Jupyter <https://uk.mathworks.com/products/reference-architectures/jupyter.html>`__. This allows you to either get a full MATLAB interface from the browser or to use MATLAB code within a Jupyter notebook. Pleae login and access the internal page `Cloud Tools <https://docs.lovelace.plymouth.ac.uk/private/lico/cloudtools>`_ for instructions on how to do this.
+MATLAB can be used on the Lovelace cluster interactively either through a desktop session or through the `MATLAB Integration for Jupyter <https://uk.mathworks.com/products/reference-architectures/jupyter.html>`__. Please login and access the internal page `JupyterHub <https://docs.lovelace.plymouth.ac.uk/private/jupyterhub/>`_ for instructions on how to do this.
 
 Graphical User Interface Session
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This functionality can also be achieved by using JupyterHub as given in the link above. This section is included for information but is essentially obsolete.
 
 To initiate a Graphical User Interface session, **connect to the login node with X11 Forwarding enabled** (please Login and access the internal site `<https://docs.lovelace.plymouth.ac.uk/private/>`_ for instructions on this). Assuming that you have set up an ssh host named :plaintext:`lovelace` referring to the login node and you are on a supported platform, simply run:
 
