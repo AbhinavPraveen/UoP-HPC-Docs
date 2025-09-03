@@ -90,6 +90,8 @@ You may only schedule task on the billed queues if there is funding assosciated 
 :plaintext:`cpu_shared`
 ~~~~~~~~~~~~~~~~~~~~~~~
 
+This queue allows users to 'share' resources meaning that they can request parts of nodes (i.e. a specific number of CPU cores and a specific amount of memory -- if a specific amount of memory is not requested, memory will be allocated proportionally to the number of CPUs you request).
+
 To run on the :plaintext:`cpu_shared` queue, add the following to the header of your
 submission script:
 
@@ -103,6 +105,8 @@ This specifies that your job requires exactly one CPU core. If your workload sup
 :plaintext:`cpu`
 ~~~~~~~~~~~~~~~~
 
+This queue will always allocate a full 64 core node exclusively to your job.
+
 To run on the :plaintext:`cpu` queue, add the following to the header of your
 submission script :
 
@@ -110,10 +114,10 @@ submission script :
 
    #SBATCH -p cpu
 
-This queue will always allocate a full 64 core node exclusively to your job.
-
 :plaintext:`cpu_highmem`
 ~~~~~~~~~~~~~~~~~~~~~~~~
+
+This queue will always allocate a full 64 core node with approximately 1.5 TiB of Memory exclusively to your job.
 
 To run on the :plaintext:`cpu_highmem` queue add the following to the header of your
 submission script :
@@ -122,10 +126,10 @@ submission script :
 
    #SBATCH -p cpu_highmem
 
-This queue will always allocate a full 64 core node exclusively to your job.
-
 :plaintext:`cpu_longrun`
 ~~~~~~~~~~~~~~~~~~~~~~~~
+
+This queue is the same as the :plaintext:`cpu_shared` queue except that it allows time limits of up to 14 days. Users must have permission and good justification to run on this queue. Please contact `hpcsupport@plymouth.ac.uk <mailto:hpcsupport@plymouth.ac.uk>`_ with your reasoning to request this.
 
 To run on the :plaintext:`cpu_longrun` queue add the following to the header of your
 submission script :
@@ -135,12 +139,12 @@ submission script :
    #SBATCH -p cpu_longrun
    #SBATCH --cpus-per-task 1
 
-This queue is the same as the :plaintext:`cpu_shared` queue except that it allows time limits of up to 14 days. Users must have permission and good justification to run on this queue. Please contact `hpcsupport@plymouth.ac.uk <mailto:hpcsupport@plymouth.ac.uk>`_ with your reasoning to request this.
-
 .. _gpu_h100_job:
 
 :plaintext:`gpu_h100`
 ~~~~~~~~~~~~~~~~~~~~~
+
+This queue allows users to request one or multiple `NVIDIA H100 SXM <https://www.nvidia.com/en-gb/data-center/h100/>`_ GPUs.
 
 To run on the :plaintext:`gpu_h100` queue add the following to the header of your
 submission script :
@@ -156,6 +160,8 @@ Each job must request at least one GPU if running on this partition.
 
 :plaintext:`gpu_l40s`
 ~~~~~~~~~~~~~~~~~~~~~
+
+This queue allows users to request one or multiple `NVIDIA L40S <https://www.nvidia.com/en-gb/data-center/l40s/>`_ GPUs.
 
 To run on the :plaintext:`gpu_l40s` queue add the following to the header of your
 submission script :
@@ -175,7 +181,7 @@ If you have special request, contact `hpcsupport@plymouth.ac.uk
 Time Limits
 -----------
 
-Time limits will be applied to all jobs on the free queues (:plaintext:`cpu_shared`, :plaintext:`cpu`, :plaintext:`cpu_highmem`, :plaintext:`gpu_h100`, :plaintext:`gpu_l40s`) on the Lovelace cluster. By default, jobs will have a Time Limit of 1 hour. This means that, **by default**, if your job runs for longer than 1 hour, it will automatically be terminated. In the event that you require your job to run for more than 1 hour, you must add a header specifiying a time limit such as:
+Time limits will be applied to all jobs on the free queues (:plaintext:`cpu_shared`, :plaintext:`cpu`, :plaintext:`cpu_longrun`, :plaintext:`cpu_highmem`, :plaintext:`gpu_h100`, :plaintext:`gpu_l40s`) on the Lovelace cluster. By default, jobs will have a Time Limit of 1 hour. This means that, **by default**, if your job runs for longer than 1 hour, it will automatically be terminated. In the event that you require your job to run for more than 1 hour, you must add a header specifiying a time limit such as:
 
 .. code-block:: sbatch
 
@@ -183,7 +189,7 @@ Time limits will be applied to all jobs on the free queues (:plaintext:`cpu_shar
 
 This example increases the time limit from the default limit of 1 hour to a limit of 12 hours, 30 minutes, and 15 seconds.
 
-You can specify a time limit of up to 3 days or, equivalently, 72 hours. The time limit is also used by the job scheduler to, when a reservation is scheduled (e.g. for a training event or for teaching), decide whether to schedule the job in advance of the reservation. As such, a job with a lower time limit specified may sometimes be scheduled more quickly than one that has a higher time limit specified.
+You can specify a time limit of up to 3 days or, equivalently, 72 hours (on the :plaintext:`cpu_longrun` queue, you can specify a time limit of up to 14 days or, equivalently, 336 hours). The time limit is also used by the job scheduler to, when a reservation is scheduled (e.g. for a training event or for teaching), decide whether to schedule the job in advance of the reservation. As such, a job with a lower time limit specified may sometimes be scheduled more quickly than one that has a higher time limit specified.
 
 Accounts
 --------
