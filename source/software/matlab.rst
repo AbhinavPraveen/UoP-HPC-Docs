@@ -24,7 +24,8 @@ MATLAB can be used on the Lovelace cluster interactively either through a deskto
 Graphical User Interface Session
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This functionality can also be achieved by using JupyterHub as given in the link above. This section is included for information but is essentially obsolete.
+.. note::
+   This functionality can also be achieved by using JupyterHub as given in the link above. This section is included for information but is essentially obsolete.
 
 To initiate a Graphical User Interface session, **connect to the login node with X11 Forwarding enabled** (please Login and access the internal site `<https://docs.lovelace.plymouth.ac.uk/private/>`_ for instructions on this). Assuming that you have set up an ssh host named :plaintext:`lovelace` referring to the login node and you are on a supported platform, simply run:
 
