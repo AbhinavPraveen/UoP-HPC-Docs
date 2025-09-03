@@ -33,4 +33,4 @@ Users can use the command below to determine whether a file is on the SSD storag
 
    /usr/lpp/mmfs/bin/mmlsattr -L FILENAME
 
-If users would like to request or advise us to store data on a specific storage type, please the `HPC Admin Team <mailto:hpcsupport@plymouth.ac.uk>`_ an email.
+If users would like to request or advise us to store data on a specific storage type, please send the `HPC Admin Team <mailto:hpcsupport@plymouth.ac.uk>`_ an email.
