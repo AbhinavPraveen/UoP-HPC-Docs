@@ -5,7 +5,7 @@ Data Storage on the Lovelace Cluster
 
 The Lovelace cluster has an IBM Spectrum Scale (also known as GPFS) filesystem with approximately 2 PiB of data storage available. This storage is provided by two types of phyiscal disks; very fast SSD disks and HDD disks. THe data is stored using RAID 6 (dual parity) meaning that for any data loss to occur, at least 3 drives must fail -- in fact, theoretically, a higher number of failures can occur without data loss if the failing drivers are not part of the same internal array (for example, in the event that 2 SSDs and 2 HDDs fail simultaneously, data availability is still guaranteed).
 
-On the Lovelace cluster, users have access to two filesystems, :plaintext:`/users` and :plaintext:`/scratch` over which the 2 PiB capacity is distributed. Home directories of users on the lovelace cluster are under :plaintext:`/users` (for example `:plaintext:/users/apraveen`). The :plaintext:`/scratch` directory is used for bulk storage and project data storage. Users can use the commands below to see files inside these directories.
+On the Lovelace cluster, users have access to two filesystems, :plaintext:`/users` and :plaintext:`/scratch` over which the 2 PiB capacity is distributed. Home directories of users on the lovelace cluster are under :plaintext:`/users` (for example :plaintext:`/users/apraveen`). The :plaintext:`/scratch` directory is used for bulk storage and project data storage. Users can use the commands below to see files inside these directories.
 
 .. code-block:: bash
 
