@@ -120,7 +120,7 @@ submission script :
 
 .. code-block:: sbatch
 
-   #SBATCH -p sbatch
+   #SBATCH -p cpu_highmem
 
 This queue will always allocate a full 64 core node exclusively to your job.
 
