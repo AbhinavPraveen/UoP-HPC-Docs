@@ -3,6 +3,10 @@
 Running Graphical Applications With X11 Forwarding
 ==================================================
 
+.. note::
+
+   This functionality can also be achieved by using JupyterHub as given in `JupyterHub <https://docs.lovelace.plymouth.ac.uk/private/jupyterhub/>`_. This section is included for information but is essentially obsolete.
+
 Graphical applications such as Ansys Workbench or MATLAB can be ran on a compute node and viewed on your local machine using X11 forwarding. X11 is a display protocol capable of operating over the network
 
 This is possible with two approaches:
