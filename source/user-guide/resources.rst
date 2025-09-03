@@ -124,6 +124,19 @@ submission script :
 
 This queue will always allocate a full 64 core node exclusively to your job.
 
+:plaintext:`cpu_longrun`
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+To run on the :plaintext:`cpu_longrun` queue add the following to the header of your
+submission script :
+
+.. code-block:: sbatch
+
+   #SBATCH -p cpu_longrun
+   #SBATCH --cpus-per-task 1
+
+This queue is the same as the :plaintext:`cpu_shared` queue except that it allows time limits of up to 14 days. Users must have permission and good justification to run on this queue. Please contact `hpcsupport@plymouth.ac.uk <mailto:hpcsupport@plymouth.ac.uk>`_ with your reasoning to request this.
+
 .. _gpu_h100_job:
 
 :plaintext:`gpu_h100`
