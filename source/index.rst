@@ -21,6 +21,7 @@ Welcome to the University of Plymouth's Public Documentation on High Performance
    Using LiCO for Jupyter, Rstudio, and More on the Lovelace Cluster (Login Required) <https://docs.lovelace.plymouth.ac.uk/private/lico/>
    user-guide/resources
    user-guide/modules
+   user-guide/datastorage
    user-guide/transfer
    user-guide/x11forward
    user-guide/projects
