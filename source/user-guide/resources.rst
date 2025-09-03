@@ -83,7 +83,7 @@ Please note that Slurm job scheduler uses the term 'partitions' to
 refer to queues, and therefore you may see the word partition used
 interchangeably both here and on other sites.
 
-There are eight partitions available on the Lovelace cluster. These correspond to two sets of four partiitons. These are the standard queues (:plaintext:`cpu_shared`, :plaintext:`cpu`, :plaintext:`cpu_highmem`, :plaintext:`gpu_h100`, :plaintext:`gpu_l40s`) and the billed queues (:plaintext:`cpu-billed`, :plaintext:`cpu_highmem-billed`, :plaintext:`gpu_h100-billed`, :plaintext:`gpu_l40s-billed`).
+There are multiple partitions available on the Lovelace cluster. These correspond to two sets of partiitons. These are the standard queues (:plaintext:`cpu_shared`, :plaintext:`cpu`, :plaintext:`cpu_longrun`, :plaintext:`cpu_highmem`, :plaintext:`gpu_h100`, :plaintext:`gpu_l40s`) and the billed queues (:plaintext:`cpu-billed`, :plaintext:`cpu_highmem-billed`, :plaintext:`gpu_h100-billed`, :plaintext:`gpu_l40s-billed`).
 
 You may only schedule task on the billed queues if there is funding assosciated with your account. Jobs submitted to these queues will be prioritised over those submitted to the standard queue.
 
