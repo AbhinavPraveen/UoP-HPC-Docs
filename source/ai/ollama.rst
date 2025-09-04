@@ -21,7 +21,7 @@ To run the Llama 4 Scout model on an NVIDIA H100 GPU on the Lovelace cluster sim
    mkdir -p "$HOME/.ollama"
 
    # Start an Ollama instance
-   podman run -d -v "$HOME/.ollama:/root/.ollama" --name ollama --device nvidia.com/gpu=all ollama/ollama
+   podman run -d -v "$HOME/.ollama:/root/.ollama" --name ollama --device nvidia.com/gpu=all docker.io/ollama/ollama
 
    # Run the model with the Ollama instance
    podman exec -it ollama ollama run llama4:scout
