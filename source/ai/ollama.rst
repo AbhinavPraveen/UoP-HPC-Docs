@@ -5,7 +5,7 @@ Ollama
 
 The Ollama free and open-source software for easily getting up and running with AI models can be used through containerisation with Podman (see :doc:`/containerisation/podman`). An example of using the software to run a model is given below.
 
-Using ollama to run `Meta's Llama 4 Scout <https://www.llama.com/models/llama-4/>`_ Model On an NVIDIA H100 GPU
+Using Ollama to run `Meta's Llama 4 Scout <https://www.llama.com/models/llama-4/>`_ Model On an NVIDIA H100 GPU
 ---------------------------------------------------------------------------------------------------------------
 
 To run the Llama 4 Scout model on an NVIDIA H100 GPU on the Lovelace cluster simply start an interactive GPU session (see :doc:`/user-guide/resources`), create a folder for Ollama, start an Ollama instance in this session, and then execute commands with the session.
