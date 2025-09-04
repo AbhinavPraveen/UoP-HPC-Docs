@@ -26,6 +26,8 @@ To run the Llama 4 Scout model on an NVIDIA H100 GPU on the Lovelace cluster sim
    # Run the model with the Ollama instance
    podman exec -it ollama ollama run llama4:scout
 
+You will then see a prompt and will be able to ask the Llama 4 model questions. Other ways of interacting with Ollama are available but not covered here.
+
 Once done, bring down your Ollama instance and exit your GPU session.
 
 .. code-block:: bash
