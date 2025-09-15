@@ -12,3 +12,4 @@ Examples of notable software found on the HPC cluster is given below.
    matlab
    gromacs
    ansys
+   openfoam
