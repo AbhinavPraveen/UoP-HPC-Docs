@@ -27,7 +27,7 @@ To use the locally built version, load OpenFOAM as follows.
 
 .. note::
 
-   Here, :plaintext:`--expert` is recommended because OpenFOAM, through it's chain of dependencies, depends on the LLVM Suite which provides the Clang compiler. On the Lovelace cluster, the GCC compiler is loaded by default. Normally, the module system will refuse to load multiple compiler modules however the :plaintext:`--expert` flag tells the module system to ignore this and proceed anyway. Curios users could try running the command above without :plaintext:`--expert` and see the result. Unloading GCC with :bash:`module rm gcc` would also be an option.
+   Here, :plaintext:`--expert` is recommended because OpenFOAM, through its chain of dependencies, depends on the LLVM Suite which provides the Clang compiler. On the Lovelace cluster, the GCC compiler is loaded by default. Normally, the module system will refuse to load multiple compiler modules however the :plaintext:`--expert` flag tells the module system to ignore this and proceed anyway. Curios users could try running the command above without :plaintext:`--expert` and see the result. Unloading GCC with :bash:`module rm gcc` would also be an option.
 
 
 After this, users can use the OpenFOAM suite as normal. For example, try:
