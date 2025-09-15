@@ -15,7 +15,7 @@ Option 2 is based on the OpenFOAM images published `here <https://hub.docker.com
 Locally Built
 -------------
 
-.. warn::
+.. warning::
 
    The current :plaintext:`openfoam/2312` has a bug where its utilities are unavailable. Users are recommended to switch to a beta set of Spack modules for now using the approach documented in :doc:`/user-guide/modules`. This will be fixed in the next release.
 

@@ -285,7 +285,7 @@ Additionally, if you would like to use the latest features we are developing on 
    module --latest load spack-modules
    module load gcc/13.3.1 openmpi
 
-.. warn::
+.. warning::
 
    Beta modules are used for testing and rapid iteration, and may have issues. Please be aware of this when using them.
 
