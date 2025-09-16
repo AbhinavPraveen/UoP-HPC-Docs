@@ -55,7 +55,7 @@ To use the contianer based approach, first see the available OpenFOAM versions:
    ------------------------------------------------------------------------------------------ /scratch/software/modules -------------------------------------------------------------------------------------------
       openfoam/2206-container    openfoam/2212-container    openfoam/2306-container    openfoam/2312-container    openfoam/2506-container
 
-As the name suggests, the versions suffixed with :plaintext:`container` are the container based versions. Let us pick :plaintext:`openfoam/2312-container` and load id.
+As the name suggests, the versions suffixed with :plaintext:`container` are the container based versions. Let us pick :plaintext:`openfoam/2312-container` and load it.
 
 .. code-block:: bash
 
